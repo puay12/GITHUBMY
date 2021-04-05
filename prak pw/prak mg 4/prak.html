@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validasi Nilai</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            color: #001833;
+        }
+        .badan{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to right top, #35547b, #4e5992, #7559a1, #a253a5, #ce489c, 
+            #e54761, #f64c75, #ff5a5e, #ff754a, #ff9333, #ffb319, #fad202);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .box{
+            width: 500px;
+            height: 400px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.877);
+            padding: 24px 24px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .title{
+            font-size: 36px;
+            font-weight: bolder;
+            text-align: center;
+            margin-top: 3%;
+        }
+        form{
+            width: 250px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 3%;
+        }
+        form label{
+            font-weight: bold;
+            font-size: 16px;
+        }
+        form input{
+            padding-left: 20px;
+            font-size: 16px;
+        }
+        form input.masuk{
+            padding: 0.5rem 6.0rem;
+            background: #f64c75 ;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 5%;
+            border: transparent solid 2px;
+            border-radius: 8px;
+        }
+        form input.masuk:hover{
+            background: transparent;
+            border: #f64c75 solid 2px;
+            color: #f64c75;
+            cursor: pointer;
+            transition: all ease .5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="badan">
+        <div class="container box">
+            <p class="title">Validasi Nilai</p>
+            <form action="prak.php">
+                <div class="form-group">
+                    <label for="nama">Nama</label>
+                    <input type="text" class="form-control" id="nama" name="nama" placeholder="Nama lengkap Anda">
+                </div>
+                <div class="form-group">
+                    <label for="nilai">Nilai</label>
+                    <input type="text" class="form-control" id="nilai" name="nilai" placeholder="Masukkan nilai Anda">
+                </div>
+                <input type="submit" class="masuk">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
