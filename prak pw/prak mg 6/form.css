@@ -161,6 +161,7 @@ img{
 /* TAMPIL.PHP------------ */
 .tampilSec{
     width: 100%;
+    padding: 24px 24px;
     background: rgba(0, 255, 255, 0.2);
 }
 
@@ -168,7 +169,7 @@ img{
     background: transparent;
     padding: 0 0;
     border: solid 2px grey;
-    width: 100%;
+    width: 1300px;
 }
 
 .tampilSec .box-main h1{
