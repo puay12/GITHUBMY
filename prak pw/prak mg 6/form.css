@@ -161,13 +161,14 @@ img{
 /* TAMPIL.PHP------------ */
 .tampilSec{
     width: 100%;
-    padding: 24px 24px;
+    padding: 12px 12px;
     background: rgba(0, 255, 255, 0.2);
 }
 
 .tampilSec .box-main{
     background: transparent;
     padding: 0 0;
+    border: solid 2px grey;
 }
 
 .tampilSec .box-main h1{
@@ -198,7 +199,7 @@ img{
 }
 
 .tampilSec .box-tabel .k-nrp{
-    width: 155px;
+    width: 120px;
 }
 
 .tampilSec .box-tabel .k-nama{
@@ -206,11 +207,11 @@ img{
 }
 
 .tampilSec .box-tabel .k-gender{
-    width: 180px;
+    width: 140px;
 }
 
 .tampilSec .box-tabel .k-agama{
-    width: 180px;
+    width: 185px;
 }
 
 .tampilSec .box-tabel .k-umur{
