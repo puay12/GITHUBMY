@@ -10,7 +10,7 @@
     <style>
         body{
             background : rgba(0, 255, 255, 0.5);
-            padding : 24px 24px;
+            padding : 10px 10px !important;
         }
     </style>
 </head>
