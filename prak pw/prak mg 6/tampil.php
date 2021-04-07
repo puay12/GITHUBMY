@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="form.css">
     <style>
         body{
-            background : rgba(0, 255, 255, 0.2);
+            background : rgba(0, 255, 255, 0.4);
         }
     </style>
 </head>
