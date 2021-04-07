@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 14px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.sec1{
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    padding: 40px 40px;
+}
+
+.sec1 .box{
+    width: 80%;
+    background: transparent;
+    padding: 32px 32px;
+    color: #000;
+    border: solid 1px transparent;
+    border-radius: 15px;
+    box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+    position: relative;
+    left: 150px;
+    top: 0;
+}
+
+.sec1 p.judul{
+    font-size: 32px;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-decoration-line: underline;
+}
+
+.sec1 img{
+    width: 550px;
+    height: 650px;
+    position: absolute;
+    bottom : 0;
+    left: -15%;
+    transform: translate(15%, 0);
+}
+
+.sec1 .col-9{
+    padding-left: 85px;
+}
+
+.sec1 button.btn-main{
+    padding: 0.5rem 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    background: rgb(0, 2, 104);
+    transition: ease 0.3s;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 32px;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -2%);
+}
+
+.sec1 input,
+.sec1 textarea{
+    letter-spacing: 2px;
+    border: 1px solid grey;
+    font-size: 13px;
+}
+
+.sec1 option{
+    font-size: 13px;
+}
+
+.sec1 .circle1,
+.sec1 .circle2,
+.sec1 .circle3{
+    background: rgb(0, 2, 104);
+    position: absolute;
+}
+
+.sec1 .circle1{
+    border-radius: 8px;
+    width: 215px;
+    height: 90px;
+    left: 2%;
+    top: 7%;
+    transform: translate(-2%, -7%);
+    padding: 15px 15px;
+    text-align: justify;
+    font-size: 12px !important;
+    color: #fff;
+    font-weight: 700;
+}
+
+.sec1 .circle2{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    left: 18%;
+    top: 18%;
+    transform: translate(-18%, -18%);
+}
+
+.sec1 .circle3{
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    left: 19.5%;
+    top: 20%;
+    transform: translate(-19.5%, -20%);
+}
+
+/* ISI.PHP--------- */
+.isi-sec{
+    width: 100%;
+    height: 100vh;
+    padding: 40px 40px;
+    background: #06d6a0;
+    position: relative;
+}
+
+.isi-sec h1{
+    font-size: 42px;
+    color: #fff;
+    font-weight: bolder;
+    text-align: center !important;
+}
+
+.isi-sec button.show{
+    padding: 0.5rem 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    background: #1b4332;
+    transition: ease 0.3s;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 32px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* TAMPIL.PHP------------ */
+.tampilSec{
+    width: 100%;
+    padding: 24px 24px;
+    background: rgba(0, 255, 255, 0.2);
+}
+
+.tampilSec .box-main{
+    background: transparent;
+    padding: 0 0;
+}
+
+.tampilSec .box-main h1{
+    font-size: 45px;
+    font-weight: bolder;
+    color: #003049;
+    text-align: center;
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.tampilSec .box-main .box-tabel{
+    background: #fff;
+    box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+}
+
+.tampilSec .box-tabel .kolom{
+    border: 1px solid #003049;
+    display: inline-flex;
+    position: relative;
+    top: 50%;
+    font-weight: 600;
+}
+
+.tampilSec .box-tabel .k-no{
+    width: 100px;
+}
+
+.tampilSec .box-tabel .k-nrp{
+    width: 300px;
+}
+
+.tampilSec .box-tabel .k-nama{
+    width: 400px;
+}
+
+.tampilSec .box-tabel .k-gender{
+    width: 200px;
+}
+
+.tampilSec .box-tabel .k-agama{
+    width: 300px;
+}
+
+.tampilSec .box-tabel .k-umur{
+    width: 100px;
+}
+
+.tampilSec .box-tabel .k-alamat{
+    width: 500px;
+}
+
+.tampilSec .box-tabel .head{
+    border-bottom: 3px solid #003049;
+}
+
+.tampilSec .box-main button.add-data{
+    padding: 0.5rem 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    background: rgb(0, 48, 73);
+    transition: ease 0.3s;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 32px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
