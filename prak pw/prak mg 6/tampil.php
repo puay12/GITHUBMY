@@ -7,6 +7,11 @@
     <title>Data Anda</title>
     <link rel="stylesheet" href="bootstrap.min.css">
 	<link rel="stylesheet" href="form.css">
+    <style>
+        body{
+            background : rgba(0, 255, 255, 0.2);
+        }
+    </style>
 </head>
 
 <body>
