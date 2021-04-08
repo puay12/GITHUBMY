@@ -194,6 +194,7 @@ img{
     font-weight: 600;
     font-size: 13px;
     width: 100%;
+    word-wrap: break-word;
 }
 
 .tampilSec .box-tabel .k-no{
@@ -221,7 +222,7 @@ img{
 }
 
 .tampilSec .box-tabel .k-alamat{
-    width: 375px;
+    width: 380px;
 }
 
 .tampilSec .box-tabel .head{
