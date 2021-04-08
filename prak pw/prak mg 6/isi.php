@@ -7,7 +7,7 @@
     $umur = $_POST["umur"];
     $alamat = $_POST["alamat"];
     $sql = "INSERT INTO prak_6(nrp,nama, gender, agama, umur, alamat) 
-    VALUES ($nrp, $nama, $gender, $agama, $umur, $alamat)"; 
+    VALUES ('$nrp', '$nama', '$gender', '$agama', '$umur', '$alamat')"; 
 ?>
 
 <!DOCTYPE html>
