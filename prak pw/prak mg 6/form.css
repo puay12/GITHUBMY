@@ -166,7 +166,7 @@ img{
 }
 
 .tampilSec .box-main{
-    background: lightcoral;
+    background: transparent;
     padding: 0 0;
     width: 100%;
 }
@@ -223,6 +223,14 @@ img{
 
 .tampilSec .box-tabel .k-alamat{
     width: 380px;
+}
+
+.tampilSec .box-tabel .k-edit{
+    width: 170px;
+}
+
+.tampilSec .box-tabel .k-edit a:hover{
+    color: rgb(0, 48, 73);
 }
 
 .tampilSec .box-tabel .head{
