@@ -34,7 +34,7 @@
                     <div class="kolom k-agama head"><b>Agama</b></div>
                     <div class="kolom k-umur head"><b>Umur</b></div>
                     <div class="kolom k-alamat head"><b>Alamat<b></div>
-                    <div class="kolom k-edit head"><b>Edit Data<b></div>
+                    <div class="kolom k-edit head"><b>Edit Data</b></div>
                 </div>
                 
                 <?php
@@ -48,7 +48,7 @@
                             <div class='kolom k-agama'>" . $kolom['agama'] . "</div>
                             <div class='kolom k-umur'>" . $kolom['umur'] . "</div>
                             <div class='kolom k-alamat'>" . $kolom['alamat'] . "</div>
-                            <div class='kolom k-edit e'><a href='#'>Ubah</a> | <a href='#'>Hapus</a></div>
+                            <div class='kolom k-edit'><a href='#'>Ubah</a> | <a href='#'>Hapus</a></div>
                         </div>";
                         $no++;
                     }
