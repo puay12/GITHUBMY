@@ -227,6 +227,11 @@ img{
 
 .tampilSec .box-tabel .k-edit{
     width: 170px;
+    margin-top: 0;
+}
+
+.tampilSec .box-tabel .k-edit.e{
+    text-align: center;
 }
 
 .tampilSec .box-tabel .k-edit a:hover{
