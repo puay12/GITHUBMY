@@ -187,7 +187,7 @@ img{
 
 .tampilSec .box-tabel .kolom{
     border: 1px solid #003049;
-    padding-left: 12px;
+    padding-left: 5px;
     display: inline-block;
     position: relative;
     top: 50%;
@@ -197,7 +197,7 @@ img{
 }
 
 .tampilSec .box-tabel .k-no{
-    width: 50px;
+    width: 35px;
 }
 
 .tampilSec .box-tabel .k-nrp{
