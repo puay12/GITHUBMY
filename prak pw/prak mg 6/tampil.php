@@ -23,9 +23,9 @@
         $no = 1;
     ?>
     <div class="tampilSec position-relative">
-        <div class="container-fluid box-main">
+        <div class="container box-main">
             <h1>DATA MAHASISWA</h1>
-            <div class="container box-tabel">
+            <div class="container-fluid box-tabel">
                 <div class="row">
                     <div class="kolom k-no head"><b>No</b></div>
                     <div class="kolom k-nrp head"><b>NRP</b></div>
