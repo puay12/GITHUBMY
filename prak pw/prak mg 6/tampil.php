@@ -27,14 +27,14 @@
             <h1>DATA MAHASISWA</h1>
             <div class="container-fluid box-tabel">
                 <div class="row">
-                    <div class="kolom k-no head"><b>No</b></div>
-                    <div class="kolom k-nrp head"><b>NRP</b></div>
-                    <div class="kolom k-nama head"><b>Nama</b></div>
-                    <div class="kolom k-gender head"><b>Jenis Kelamin</b></div>
-                    <div class="kolom k-agama head"><b>Agama</b></div>
-                    <div class="kolom k-umur head"><b>Umur</b></div>
-                    <div class="kolom k-alamat head"><b>Alamat<b></div>
-                    <div class="kolom k-edit head"><b>Edit Data</b></div>
+                    <div class="kolom k-no head">No</div>
+                    <div class="kolom k-nrp head">NRP</div>
+                    <div class="kolom k-nama head">Nama</div>
+                    <div class="kolom k-gender head">Jenis Kelamin</div>
+                    <div class="kolom k-agama head">Agama</div>
+                    <div class="kolom k-umur head">Umur</div>
+                    <div class="kolom k-alamat head">Alamat</div>
+                    <div class="kolom k-edit head">Edit Data</div>
                 </div>
                 
                 <?php
