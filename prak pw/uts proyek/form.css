@@ -73,7 +73,7 @@ img{
     font-weight: 700;
     margin-top: 32px;
     position: absolute;
-    top: 1%;
+    bottom: 1%;
     left: 50%;
     transform: translate(-50%, -1%);
 }
