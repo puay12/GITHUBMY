@@ -23,7 +23,7 @@
         $no = 1;
     ?>
     <div class="tampilSec position-relative">
-        <div class="container-fluid box-main">
+        <div class="container box-main">
             <h1>DATA MAHASISWA</h1>
             <div class="container-fluid box-tabel">
                 <div class="row">
