@@ -73,9 +73,9 @@ img{
     font-weight: 700;
     margin-top: 32px;
     position: absolute;
-    bottom: 2%;
+    top: 1%;
     left: 50%;
-    transform: translate(-50%, -2%);
+    transform: translate(-50%, -1%);
 }
 
 .sec2 input,
@@ -94,10 +94,6 @@ img{
 
 .sec2 .show-form{
     display: block;
-}
-
-.sec2 button#nextbtn{
-    margin-top: 10px;
 }
 
 .sec2 button#submitbtn,
