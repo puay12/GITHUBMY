@@ -12,7 +12,7 @@
     $ipk = $_POST["ipk"];
     $deskripsi = $_POST["deskripsi"];
     $sql = "INSERT INTO mahasiswa(nrp, nama, tmpt_lahir, tgl_lahir, gender, agama, alamat, jurusan, lama_studi_thn, 
-    lama_studi_bln, ipk, desc_diri) VALUES ('$nrp', '$nama', '$tmptLahir', $tglLahir, '$gender', 
+    lama_studi_bln, ipk, desc_diri) VALUES ('$nrp', '$nama', '$tmptLahir', '$tglLahir', '$gender', 
     '$agama', '$alamat', '$jurusan', '$lamaStudiThn', '$lamaStudiBln', '$ipk', '$deskripsi')"; 
 ?>
 
