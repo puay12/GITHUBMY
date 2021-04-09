@@ -11,17 +11,7 @@
 </head>
 
 <body>
-	<!-- LANDING -->
-	<div class="sec1 position-relative">
-		<div class="container-fluid hero">
-			<p class="judul text-uppercase">welcome!</p>
-			<p class="sub">Isi data dirimu dengan klik tombol di bawah ini.</p>
-			<a href="#sec2"><button class="btn btn-main text-uppercase">isi form</button></a>
-		</div>
-	</div>
-	<!-- END OF LANDING -->
-
-	<!-- SECTION 2 -->
+	<!-- FORM -->
 	<div class="sec2 position-relative" id="sec2">
 		<div class="container-fluid">
 			<div class="row">
@@ -138,7 +128,7 @@
 			<div class="circle3"></div>
 		</div>
 	</div>
-	<!-- END OF SECTION 2 -->
+	<!-- END OF FORM -->
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
