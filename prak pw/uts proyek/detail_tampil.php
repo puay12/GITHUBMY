@@ -11,11 +11,13 @@
 
 <body>
     <?php 
+        include 'koneksi.php';
         $nrp = $_POST["nrp"];
         $nama = $_POST['nama'];
         $tmptLahir = $_POST["tmptLAHIR"];
         $tglLahir = $_POST["tglLAHIR"];
         $gender = $_POST["gender"];
+        $agama = $_POST['agama']; 
         $alamat = $_POST["alamat"];
         $jurusan = $_POST["jurusan"];
         $lamaStudiThn = $_POST["lama-studi-thn"];
@@ -45,12 +47,14 @@
                                 echo "<p class='isi'>$tmptLahir, $tglLahir</p>";
                                 echo "<p class='labelnya'>Jenis Kelamin</p>";
                                 echo "<p class='isi'>$gender</p>";
-                                echo "<p class='labelnya'>Alamat</p>";
-                                echo "<p class='isi'>$alamat</p>";
                             ?>
                         </div>
                         <div class="col-6">
                             <?php
+                            echo "<p class='labelnya'>Agama</p>";
+                            echo "<p class='isi'>$agama</p>";
+                            echo "<p class='labelnya'>Alamat</p>";
+                            echo "<p class='isi'>$alamat</p>";
                             echo "<p class='labelnya'>Jurusan</p>";
                             echo "<p class='isi'>$jurusan</p>";
                             echo "<p class='labelnya'>Lama Studi</p>";
