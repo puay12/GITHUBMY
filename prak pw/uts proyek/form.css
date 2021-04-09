@@ -96,6 +96,10 @@ img{
     display: block;
 }
 
+.sec2 button#nextbtn{
+    margin-top: 10px;
+}
+
 .sec2 button#submitbtn,
 .sec2 button#prevbtn{
     position: relative;
