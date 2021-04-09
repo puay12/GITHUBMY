@@ -159,7 +159,6 @@ img{
 .tampilSec .box-main{
     background: transparent;
     padding: 0 0;
-    width: 100%;
 }
 
 .tampilSec .box-main h1{
@@ -197,11 +196,11 @@ img{
 }
 
 .tampilSec .box-tabel .k-nama{
-    width: 223px;
+    width: 300px;
 }
 
 .tampilSec .box-tabel .k-gender{
-    width: 140px;
+    width: 150px;
 }
 
 .tampilSec .box-tabel .k-jurusan{
@@ -209,11 +208,11 @@ img{
 }
 
 .tampilSec .box-tabel .k-ipk{
-    width: 95px;
+    width: 85px;
 }
 
 .tampilSec .box-tabel .k-edit{
-    width: 170px;
+    width: 250px;
     text-align: center;
 }
 
