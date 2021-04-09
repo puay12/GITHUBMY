@@ -196,15 +196,15 @@ img{
 }
 
 .tampilSec .box-tabel .k-nama{
-    width: 300px;
+    width: 260px;
 }
 
 .tampilSec .box-tabel .k-gender{
-    width: 150px;
+    width: 140px;
 }
 
 .tampilSec .box-tabel .k-jurusan{
-    width: 200px;
+    width: 250px;
 }
 
 .tampilSec .box-tabel .k-ipk{
@@ -212,7 +212,7 @@ img{
 }
 
 .tampilSec .box-tabel .k-edit{
-    width: 250px;
+    width: 230px;
     text-align: center;
 }
 
