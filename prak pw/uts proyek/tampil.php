@@ -25,7 +25,7 @@
     <div class="tampilSec position-relative">
         <div class="container box-main">
             <h1>DATA MAHASISWA</h1>
-            <div class="container-fluid box-tabel">
+            <div class="container box-tabel">
                 <div class="row">
                     <div class="kolom k-no head">No</div>
                     <div class="kolom k-nrp head">NRP</div>
