@@ -36,24 +36,24 @@
                 </div>
                 
                 <?php
-                if(mysqli_num_rows($result) > 0){
-                    while($kolom = mysqli_fetch_array($result)){
-                        echo "<div class='row'>
-                            <div class='kolom k-no'>" . $no . "</div>
-                            <div class='kolom k-nrp'>" . $kolom['nrp'] . "</div>
-                            <div class='kolom k-nama'>" . $kolom['nama'] . "</div>
-                            <div class='kolom k-gender'>" . $kolom['gender'] . "</div>
-                            <div class='kolom k-jurusan'>" . $kolom['jurusan'] . "</div>
-                            <div class='kolom k-ipk'>" . $kolom['ipk'] . "</div>
-                            <div class='kolom k-edit'><a href='form_update.php?nrp=$kolom[nrp]'>Ubah</a> | 
-                                <a href='#'>Hapus</a> | <a href='#'>Detail</a></div>
-                        </div>";
-                        $no++;
+                    if(mysqli_num_rows($result) > 0){
+                        while($kolom = mysqli_fetch_array($result)){
+                            echo "<div class='row'>
+                                <div class='kolom k-no'>$no</div>
+                                <div class='kolom k-nrp'>" . $kolom['nrp'] . "</div>
+                                <div class='kolom k-nama'>" . $kolom['nama'] . "</div>
+                                <div class='kolom k-gender'>" . $kolom['gender'] . "</div>
+                                <div class='kolom k-jurusan'>" . $kolom['jurusan'] . "</div>
+                                <div class='kolom k-ipk'>" . $kolom['ipk'] . "</div>
+                                <div class='kolom k-edit'><a href='form_update.php?id=" . $kolom['id_mhs'] ."'>Ubah</a> | 
+                                    <a href='#'>Hapus</a> | <a href='#'>Detail</a></div>
+                            </div>";
+                            $no++;
+                        }
                     }
-                }
-                else{
-                    echo "<div class='row'><div class='col'>Tidak ada data</div></div>";
-                }
+                    else{
+                        echo "<div class='row'><div class='col'>Tidak ada data</div></div>";
+                    }
                 ?>
             </div>
             <a href="form.php">
