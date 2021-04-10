@@ -77,22 +77,22 @@
 								<!-- JENIS KELAMIN -->
 								<div class="form-group">
 									<label for="gender">Jenis Kelamin</label>
-									<select class="form-control" id="gender" name="gender" value="<?php $gender;?>">
-										<option value="Laki-laki">Laki-laki</option>
-										<option value="Perempuan">Perempuan</option>
+									<select class="form-control" id="gender" name="gender">
+										<option value="Laki-laki" <?php ($gender == 'Laki-laki' ? 'selected' : '') ?>>Laki-laki</option>
+										<option value="Perempuan" <?php ($gender == 'Perempuan' ? 'selected' : '') ?>>Perempuan</option>
 									</select>
 								</div>
 								<!-- AGAMA---------- -->
 								<div class="form-group">
 									<label for="agama">Agama</label>
-									<select class="form-control" id="agama" name="agama" value="<?php $agama;?>">
-										<option value="Islam">Islam</option>
-										<option value="Kristen Protestan">Kristen Protestan</option>
-                                        <option value="Kristen Katolik">Kristen Katolik</option>
-										<option value="Hindu">Hindu</option>
-                                        <option value="Buddha">Buddha</option>
-                                        <option value="Konghucu">Konghucu</option>
-                                        <option value="Lainnya">Lainnnya</option>
+									<select class="form-control" id="agama" name="agama">
+										<option value="Islam" <?php ($agama == 'Islam' ? 'selected' : '') ?>>Islam</option>
+										<option value="Kristen Protestan" <?php ($agama == 'Kristen Protestan' ? 'selected' : '') ?>>Kristen Protestan</option>
+                                        <option value="Kristen Katolik" <?php ($agama == 'Kristen Katolik' ? 'selected' : '') ?>>Kristen Katolik</option>
+										<option value="Hindu" <?php ($agama == 'Hindu' ? 'selected' : '') ?>>Hindu</option>
+                                        <option value="Buddha" <?php ($agama == 'Buddha' ? 'selected' : '') ?>>Buddha</option>
+                                        <option value="Konghucu" <?php ($agama == 'Konghucu' ? 'selected' : '') ?>>Konghucu</option>
+                                        <option value="Lainnya" <?php ($agama == 'Lainnya' ? 'selected' : '') ?>>Lainnnya</option>
 									</select>
 								</div>
 								<!-- Alamat-------- -->
