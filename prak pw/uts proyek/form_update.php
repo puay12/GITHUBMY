@@ -70,14 +70,14 @@
 										</div>
 										<div class="col">
 											<input type="date" class="form-control" name="tglLAHIR" id="ttl"
-												placeholder="Tanggal lahir" value="<?php echo $tglLahir;?>">
+												placeholder="Tanggal lahir" value="<?php $tglLahir;?>">
 										</div>
 									</div>
 								</div>
 								<!-- JENIS KELAMIN -->
 								<div class="form-group">
 									<label for="gender">Jenis Kelamin</label>
-									<select class="form-control" id="gender" name="gender" value="<?php echo $gender;?>">
+									<select class="form-control" id="gender" name="gender" value="<?php $gender;?>">
 										<option value="Laki-laki">Laki-laki</option>
 										<option value="Perempuan">Perempuan</option>
 									</select>
@@ -85,7 +85,7 @@
 								<!-- AGAMA---------- -->
 								<div class="form-group">
 									<label for="agama">Agama</label>
-									<select class="form-control" id="agama" name="agama" value="<?php echo $agama;?>">
+									<select class="form-control" id="agama" name="agama" value="<?php $agama;?>">
 										<option value="Islam">Islam</option>
 										<option value="Kristen Protestan">Kristen Protestan</option>
                                         <option value="Kristen Katolik">Kristen Katolik</option>
