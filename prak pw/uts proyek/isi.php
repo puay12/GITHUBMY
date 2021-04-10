@@ -6,6 +6,7 @@
     $tmptLahir = $_POST["tmptLAHIR"];
     $tglLahir = $_POST["tglLAHIR"];
     $gender = $_POST["gender"];
+    $agama = $_POST['agama'];
     $alamat = $_POST["alamat"];
     $jurusan = $_POST["jurusan"];
     $lamaStudiThn = $_POST["lama-studi-thn"];

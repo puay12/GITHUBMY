@@ -21,15 +21,15 @@
             while($kolom = mysqli_fetch_array($result)){
 				$nrp = $kolom['nrp'];
                 $nama = $kolom['nama'];
-                $tmptLahir = $kolom["tmptLAHIR"];
-                $tglLahir = $kolom["tglLAHIR"];
+                $tmptLahir = $kolom["tmpt_lahir"];
+                $tglLahir = $kolom["tgl_lahir"];
                 $gender = $kolom["gender"];
                 $alamat = $kolom["alamat"];
                 $jurusan = $kolom["jurusan"];
-                $lamaStudiThn = $kolom["lama-studi-thn"];
-                $lamaStudiBln = $kolom["lama-studi-bln"];
+                $lamaStudiThn = $kolom["lama_studi_thn"];
+                $lamaStudiBln = $kolom["lama_studi_bln"];
                 $ipk = $kolom["ipk"];
-                $deskripsi = $kolom["deskripsi"];
+                $deskripsi = $kolom["desc_diri"];
             }
         }
         else{
