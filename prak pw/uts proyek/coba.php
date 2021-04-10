@@ -16,9 +16,6 @@
         $id = $_POST['id_mhs'];
         $sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id";
         $result = mysqli_query($konek, $sql);
-
-        if(mysqli_num_rows($result) > 0){
-            while($kolom = mysqli_fetch_array($result)){
     ?>
 	<!-- FORM -->
 	<div class="sec2 position-relative" id="sec2">
@@ -30,6 +27,10 @@
 						<p class="judul text-uppercase">biodata diri</p>
 						<!-- FORM------- -->
 						<form action="update.php" method="post">
+                        <?php
+                        if(mysqli_num_rows($result) > 0){
+                            while($kolom = mysqli_fetch_array($result)){
+                        ?>
 							<!-- FORM STEP 1 -->
 							<div class="step show-form">
 								<!-- NRP----------- -->
