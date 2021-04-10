@@ -14,7 +14,7 @@
     <?php 
         include 'koneksi.php';
         $nrp = $_POST["nrp"];
-        $sql = "SELECT * FROM mahasiswa WHERE nrp='$nrp'";
+        $sql = "SELECT * FROM mahasiswa WHERE nrp=$nrp";
         $result = mysqli_query($konek, $sql);
 
         if(mysqli_num_rows($result) > 0){
