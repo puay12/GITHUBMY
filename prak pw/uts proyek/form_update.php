@@ -19,6 +19,7 @@
 
         if(mysqli_num_rows($result) > 0){
             while($kolom = mysqli_fetch_array($result)){
+				$nrp = $kolom['nrp'];
                 $nama = $kolom['nama'];
                 $tmptLahir = $kolom["tmptLAHIR"];
                 $tglLahir = $kolom["tglLAHIR"];
