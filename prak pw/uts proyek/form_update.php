@@ -52,13 +52,13 @@
 								<div class="form-group">
 									<label for="nrp">NRP</label>
 									<input type="text" class="form-control" name="nrp" id="nrp" 
-                                    value="<? echo $nrp?>">
+                                    value="<?php echo $nrp?>">
 								</div>
 								<!-- nama---------- -->
 								<div class="form-group">
 									<label for="nama">Nama Lengkap</label>
 									<input type="text" class="form-control" name="nama" id="nama" 
-                                    value="<? echo $nama?>">
+                                    value="<?php echo $nama?>">
 								</div>
 								<!-- TTL----------- -->
 								<div class="form-group">
@@ -66,18 +66,18 @@
 									<div class="row">
 										<div class="col">
 											<input type="text" class="form-control" name="tmptLAHIR" id="ttl"
-												placeholder="Kota Kelahiran" value="<? echo $tmptLahir?>">
+												placeholder="Kota Kelahiran" value="<?php echo $tmptLahir?>">
 										</div>
 										<div class="col">
 											<input type="date" class="form-control" name="tglLAHIR" id="ttl"
-												placeholder="Tanggal lahir" value="<? echo $tglLahir?>">
+												placeholder="Tanggal lahir" value="<?php echo $tglLahir?>">
 										</div>
 									</div>
 								</div>
 								<!-- JENIS KELAMIN -->
 								<div class="form-group">
 									<label for="gender">Jenis Kelamin</label>
-									<select class="form-control" id="gender" name="gender" value="<? echo $gender?>">
+									<select class="form-control" id="gender" name="gender" value="<?php echo $gender?>">
 										<option value="Laki-laki">Laki-laki</option>
 										<option value="Perempuan">Perempuan</option>
 									</select>
@@ -85,7 +85,7 @@
 								<!-- AGAMA---------- -->
 								<div class="form-group">
 									<label for="agama">Agama</label>
-									<select class="form-control" id="agama" name="agama" value="<? echo $agama?>">
+									<select class="form-control" id="agama" name="agama" value="<?php echo $agama?>">
 										<option value="Islam">Islam</option>
 										<option value="Kristen Protestan">Kristen Protestan</option>
                                         <option value="Kristen Katolik">Kristen Katolik</option>
@@ -99,7 +99,7 @@
 								<div class="form-group">
 									<label for="alamat">Alamat Tempat Tinggal</label>
 									<input type="text" class="form-control" id="alamat" name="alamat" 
-                                    value="<? echo $alamat?>">
+                                    value="<?php echo $alamat?>">
 								</div>
 								<br />
 								<!-- NEXT-BTN -->
@@ -113,7 +113,7 @@
 								<div class="form-group">
 									<label for="jurusan">Jurusan</label>
 									<input type="text" class="form-control" name="jurusan" id="jurusan"
-                                    value="<? echo $jurusan?>">
+                                    value="<?php echo $jurusan?>">
 								</div>
 								<!-- Lama study---------- -->
 								<div class="form-group">
@@ -121,11 +121,11 @@
 									<div class="row">
 										<div class="col">
 											<input type="text" class="form-control" name="lama-studi-thn"
-												id="lama-studi" placeholder="Tahun" value="<? echo $lamaStudiThn?>">
+												id="lama-studi" placeholder="Tahun" value="<?php echo $lamaStudiThn?>">
 										</div>
 										<div class="col">
 											<input type="text" class="form-control" name="lama-studi-bln"
-												id="lama-studi" placeholder="Bulan" value="<? echo $lamaStudiBln?>">
+												id="lama-studi" placeholder="Bulan" value="<?php echo $lamaStudiBln?>">
 										</div>
 									</div>
 								</div>
@@ -133,14 +133,14 @@
 								<div class="form-group">
 									<label for="ipk">IPK Terakhir</label>
 									<input type="text" class="form-control" name="ipk" id="ipk" 
-									placeholder="4.00 (Gunakan titik sebagai koma)" value="<? echo $ipk?>">
+									placeholder="4.00 (Gunakan titik sebagai koma)" value="<?php echo $ipk?>">
 								</div>
 								<!-- DESKRIPSI -->
 								<div class="form-group">
 									<label for="deskripsi">Tentang Anda</label>
 									<textarea class="form-control" id="deskripsi" name="deskripsi" rows="5"
 									placeholder="Tuliskan tentang diri Anda kurang dari 250 karakter"
-                                    value="<? echo $deskripsi?>"></textarea>
+                                    value="<?php echo $deskripsi?>"></textarea>
 								</div>
 								<br />
 								<!-- PREV BTN -->
