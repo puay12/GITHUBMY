@@ -20,15 +20,15 @@
         if(mysqli_num_rows($result) > 0){
             while($kolom = mysqli_fetch_array($result)){
                 $nama = $kolom['nama'];
-                $tmptLahir = $kolom["tmptLAHIR"];
-                $tglLahir = $kolom["tglLAHIR"];
-                $gender = $kolom["gender"];
-                $alamat = $kolom["alamat"];
-                $jurusan = $kolom["jurusan"];
-                $lamaStudiThn = $kolom["lama-studi-thn"];
-                $lamaStudiBln = $kolom["lama-studi-bln"];
-                $ipk = $kolom["ipk"];
-                $deskripsi = $kolom["deskripsi"];
+                $tmptLahir = $kolom['tmptLAHIR'];
+                $tglLahir = $kolom['tglLAHIR'];
+                $gender = $kolom['gender'];
+                $alamat = $kolom['alamat'];
+                $jurusan = $kolom['jurusan'];
+                $lamaStudiThn = $kolom['lama-studi-thn'];
+                $lamaStudiBln = $kolom['lama-studi-bln'];
+                $ipk = $kolom['ipk'];
+                $deskripsi = $kolom['deskripsi'];
             }
         }
         else{
