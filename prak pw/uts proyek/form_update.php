@@ -13,8 +13,8 @@
 <body>
     <?php 
         include 'koneksi.php';
-        $nrp = $_POST["nrp"];
-        $sql = "SELECT * FROM mahasiswa WHERE nrp=$nrp";
+        $id = $_POST['id_mhs'];
+        $sql = "SELECT * FROM mahasiswa WHERE id_mhs=" . $id;
         $result = mysqli_query($konek, $sql);
 
         if(mysqli_num_rows($result) > 0){
