@@ -17,7 +17,6 @@
 <body>
     <?php 
         include 'koneksi.php';
-        $nrp = $_POST['nrp'];
         $sql = "SELECT * FROM mahasiswa";
         $result = mysqli_query($konek, $sql);
         $no = 1;
