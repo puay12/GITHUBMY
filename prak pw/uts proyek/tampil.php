@@ -46,7 +46,7 @@
                             <div class='kolom k-gender'>" . $kolom['gender'] . "</div>
                             <div class='kolom k-jurusan'>" . $kolom['jurusan'] . "</div>
                             <div class='kolom k-ipk'>" . $kolom['ipk'] . "</div>
-                            <div class='kolom k-edit'><a href='#'>Ubah</a> | <a href='#'>Hapus</a> | 
+                            <div class='kolom k-edit'><a href='form_update.php'>Ubah</a> | <a href='#'>Hapus</a> | 
                             <a href='detail_tampil.php'>Detail</a></div>
                         </div>";
                         $no++;
