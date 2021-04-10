@@ -5,17 +5,17 @@
     $result = mysqli_query($konek, $sql);
 
     if(mysqli_num_rows($result) > 0){
-        while($row = mysqli_fetch_array($result)){
-            $nama = $row['nama'];
-            $tmptLahir = $row["tmptLAHIR"];
-            $tglLahir = $row["tglLAHIR"];
-            $gender = $row["gender"];
-            $alamat = $row["alamat"];
-            $jurusan = $row["jurusan"];
-            $lamaStudiThn = $row["lama-studi-thn"];
-            $lamaStudiBln = $row["lama-studi-bln"];
-            $ipk = $row["ipk"];
-            $deskripsi = $row["deskripsi"];
+        while($kolom = mysqli_fetch_array($result)){
+            $nama = $kolom['nama'];
+            $tmptLahir = $kolom["tmptLAHIR"];
+            $tglLahir = $kolom["tglLAHIR"];
+            $gender = $kolom["gender"];
+            $alamat = $kolom["alamat"];
+            $jurusan = $kolom["jurusan"];
+            $lamaStudiThn = $kolom["lama-studi-thn"];
+            $lamaStudiBln = $kolom["lama-studi-bln"];
+            $ipk = $kolom["ipk"];
+            $deskripsi = $kolom["deskripsi"];
         }
     }
     else{
