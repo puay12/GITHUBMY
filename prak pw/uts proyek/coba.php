@@ -19,23 +19,8 @@
 
         if(mysqli_num_rows($result) > 0){
             while($kolom = mysqli_fetch_array($result)){
-                $nama = $kolom['nama'];
-                $tmptLahir = $kolom['tmptLAHIR'];
-                $tglLahir = $kolom['tglLAHIR'];
-                $gender = $kolom['gender'];
-                $alamat = $kolom['alamat'];
-                $jurusan = $kolom['jurusan'];
-                $lamaStudiThn = $kolom['lama-studi-thn'];
-                $lamaStudiBln = $kolom['lama-studi-bln'];
-                $ipk = $kolom['ipk'];
-                $deskripsi = $kolom['deskripsi'];
-            }
-        }
-        else{
-            echo "0 result";
-        }
     ?>
-	<!-- FORM -->
+    <!-- FORM -->
 	<div class="sec2 position-relative" id="sec2">
 		<div class="container-fluid">
 			<div class="row">
@@ -158,6 +143,14 @@
 		</div>
 	</div>
 	<!-- END OF FORM -->
+    <?php
+            }
+        }
+        else{
+            echo "0 result";
+        }
+    ?>
+	
 </body>
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
