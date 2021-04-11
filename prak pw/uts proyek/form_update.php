@@ -71,7 +71,7 @@
 										</div>
 										<div class="col">
 											<input type="date" class="form-control" name="tglLAHIR" id="ttl"
-												placeholder="Tanggal lahir" value="<?php $tglLahir;?>">
+												placeholder="Tanggal lahir" value="<?php echo $tglLahir;?>">
 										</div>
 									</div>
 								</div>
