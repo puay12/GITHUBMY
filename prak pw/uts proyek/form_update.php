@@ -140,8 +140,8 @@
 								<div class="form-group">
 									<label for="deskripsi">Tentang Anda</label>
 									<textarea class="form-control" id="deskripsi" name="deskripsi" rows="5"
-									placeholder="Tuliskan tentang diri Anda kurang dari 250 karakter"
-                                    value="<?php echo $deskripsi;?>"></textarea>
+									placeholder="Tuliskan tentang diri Anda kurang dari 250 karakter">
+									<?php $deskripsi?></textarea>
 								</div>
 								<br />
 								<!-- PREV BTN -->
