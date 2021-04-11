@@ -24,6 +24,7 @@
                 $tmptLahir = $kolom["tmpt_lahir"];
                 $tglLahir = $kolom["tgl_lahir"];
                 $gender = $kolom["gender"];
+				$agama = $kolom['agama'];
                 $alamat = $kolom["alamat"];
                 $jurusan = $kolom["jurusan"];
                 $lamaStudiThn = $kolom["lama_studi_thn"];
