@@ -141,7 +141,7 @@
 									<label for="deskripsi">Tentang Anda</label>
 									<textarea class="form-control" id="deskripsi" name="deskripsi" rows="5"
 									placeholder="Tuliskan tentang diri Anda kurang dari 250 karakter">
-									<?php $deskripsi?></textarea>
+									<?php echo $deskripsi?></textarea>
 								</div>
 								<br />
 								<!-- PREV BTN -->
