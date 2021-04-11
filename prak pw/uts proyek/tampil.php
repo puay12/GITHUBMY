@@ -46,7 +46,8 @@
                                 <div class='kolom k-jurusan'>" . $kolom['jurusan'] . "</div>
                                 <div class='kolom k-ipk'>" . $kolom['ipk'] . "</div>
                                 <div class='kolom k-edit'><a href='form_update.php?id_mhs=$kolom[id_mhs]'>
-                                    Ubah</a> | <a href='#'>Hapus</a> | <a href='#'>Detail</a></div>
+                                    Ubah</a> | <a href='del_data.php?id_mhs=$kolom[id_mhs]'>Hapus</a> | 
+                                    <a href='#'>Detail</a></div>
                             </div>";
                             $no++;
                         }
