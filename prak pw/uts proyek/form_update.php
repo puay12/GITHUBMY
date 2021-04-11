@@ -79,21 +79,21 @@
 								<div class="form-group">
 									<label for="gender">Jenis Kelamin</label>
 									<select class="form-control" id="gender" name="gender">
-										<option value="Laki-laki" <?php ($gender == 'Laki-laki' ? 'selected' : '') ?>>Laki-laki</option>
-										<option value="Perempuan" <?php ($gender == 'Perempuan' ? 'selected' : '') ?>>Perempuan</option>
+										<option value="Laki-laki" <?php echo ($gender == 'Laki-laki' ? 'selected' : '') ?>>Laki-laki</option>
+										<option value="Perempuan" <?php echo ($gender == 'Perempuan' ? 'selected' : '') ?>>Perempuan</option>
 									</select>
 								</div>
 								<!-- AGAMA---------- -->
 								<div class="form-group">
 									<label for="agama">Agama</label>
 									<select class="form-control" id="agama" name="agama">
-										<option value="Islam" <?php ($agama == 'Islam' ? 'selected' : '') ?>>Islam</option>
-										<option value="Kristen Protestan" <?php ($agama == 'Kristen Protestan' ? 'selected' : '') ?>>Kristen Protestan</option>
-                                        <option value="Kristen Katolik" <?php ($agama == 'Kristen Katolik' ? 'selected' : '') ?>>Kristen Katolik</option>
-										<option value="Hindu" <?php ($agama == 'Hindu' ? 'selected' : '') ?>>Hindu</option>
-                                        <option value="Buddha" <?php ($agama == 'Buddha' ? 'selected' : '') ?>>Buddha</option>
-                                        <option value="Konghucu" <?php ($agama == 'Konghucu' ? 'selected' : '') ?>>Konghucu</option>
-                                        <option value="Lainnya" <?php ($agama == 'Lainnya' ? 'selected' : '') ?>>Lainnnya</option>
+										<option value="Islam" <?php echo ($agama == 'Islam' ? 'selected' : '') ?>>Islam</option>
+										<option value="Kristen Protestan" <?php echo ($agama == 'Kristen Protestan' ? 'selected' : '') ?>>Kristen Protestan</option>
+                                        <option value="Kristen Katolik" <?php echo ($agama == 'Kristen Katolik' ? 'selected' : '') ?>>Kristen Katolik</option>
+										<option value="Hindu" <?php echo ($agama == 'Hindu' ? 'selected' : '') ?>>Hindu</option>
+                                        <option value="Buddha" <?php echo ($agama == 'Buddha' ? 'selected' : '') ?>>Buddha</option>
+                                        <option value="Konghucu" <?php echo ($agama == 'Konghucu' ? 'selected' : '') ?>>Konghucu</option>
+                                        <option value="Lainnya" <?php echo ($agama == 'Lainnya' ? 'selected' : '') ?>>Lainnnya</option>
 									</select>
 								</div>
 								<!-- Alamat-------- -->
