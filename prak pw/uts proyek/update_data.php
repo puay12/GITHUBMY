@@ -1,6 +1,6 @@
 <?php 
 	include 'koneksi.php';
-	$id = $_POST['id_mhs'];
+	$id = $_GET['id_mhs'];
     $nrp = $_POST["nrp"];
     $nama = $_POST['nama'];
     $tmptLahir = $_POST["tmptLAHIR"];
@@ -21,7 +21,7 @@
 		header("location:tampil.php");
 	}
 	else{
-		echo "<h1>Error $sql : <br/>" . mysqli_error($konek) . "</h1>";
+		echo "<h1>Error : <br/>" . mysqli_error($konek) . "</h1>";
 	}
 	mysqli_close($konek);
 ?>
