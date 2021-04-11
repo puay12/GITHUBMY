@@ -21,7 +21,7 @@
 		header("location:tampil.php");
 	}
 	else{
-		echo "<h1>Koneksi Error : <br/>" . mysqli_error($konek) . "</h1>";
+		echo "<h1>Error : <br/>" . mysqli_error($konek) . "</h1>";
 	}
 	mysqli_close($konek);
 ?>
