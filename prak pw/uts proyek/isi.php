@@ -1,5 +1,6 @@
 <?php 
     include 'koneksi.php';
+    $id = $_GET['ID'];
     $nrp = $_POST["nrp"];
     $nama = $_POST['nama'];
     $tmptLahir = $_POST["tmptLAHIR"];
