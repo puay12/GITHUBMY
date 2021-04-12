@@ -19,7 +19,7 @@
 
         if(mysqli_num_rows($result) > 0){
             while($kolom = mysqli_fetch_array($result)){
-				// $id = $kolom['id_mhs'];
+				$id = $kolom['id_mhs'];
 				$nrp = $kolom['nrp'];
                 $nama = $kolom['nama'];
                 $tmptLahir = $kolom["tmpt_lahir"];
@@ -52,7 +52,7 @@
 							<div class="step show-form">
 								<!-- NRP----------- -->
 								<div class="form-group">
-									<input type="hidden" name="id_mhs" value="<?php $kolom['id_mhs'] ?>">
+									<input type="hidden" name="id_mhs" value="<?php $id ?>">
 									<label for="nrp">NRP</label>
 									<input type="text" class="form-control" name="nrp" id="nrp" 
                                     value="<?php echo $nrp;?>">
