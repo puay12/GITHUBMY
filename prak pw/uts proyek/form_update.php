@@ -13,12 +13,13 @@
 <body>
     <?php 
         include 'koneksi.php';
-        $id = $_GET['id_mhs'];
+        $id = $_GET['ID'];
         $sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id";
         $result = mysqli_query($konek, $sql);
 
         if(mysqli_num_rows($result) > 0){
             while($kolom = mysqli_fetch_array($result)){
+				$id = $kolom['id_mhs'];
 				$nrp = $kolom['nrp'];
                 $nama = $kolom['nama'];
                 $tmptLahir = $kolom["tmpt_lahir"];
@@ -46,11 +47,12 @@
 					<div class="box">
 						<p class="judul text-uppercase">biodata diri</p>
 						<!-- FORM------- -->
-						<form action="update_data.php?id_mhs=$id" method="post">
+						<form action="update_data.php?" method="post">
 							<!-- FORM STEP 1 -->
 							<div class="step show-form">
 								<!-- NRP----------- -->
 								<div class="form-group">
+									<input type="hidden" name="ID" value="<?php $id ?>">
 									<label for="nrp">NRP</label>
 									<input type="text" class="form-control" name="nrp" id="nrp" 
                                     value="<?php echo $nrp;?>">
