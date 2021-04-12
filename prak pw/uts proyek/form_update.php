@@ -13,7 +13,7 @@
 <body>
     <?php 
         include 'koneksi.php';
-        $id = $_GET['ID'];
+        $id = $_GET['id_mhs'];
         $sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id";
         $result = mysqli_query($konek, $sql);
 
@@ -52,7 +52,7 @@
 							<div class="step show-form">
 								<!-- NRP----------- -->
 								<div class="form-group">
-									<input type="hidden" name="ID" value="<?php $id ?>">
+									<input type="hidden" name="id_mhs" value="<?php $id ?>">
 									<label for="nrp">NRP</label>
 									<input type="text" class="form-control" name="nrp" id="nrp" 
                                     value="<?php echo $nrp;?>">
