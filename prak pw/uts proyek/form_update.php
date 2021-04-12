@@ -46,7 +46,7 @@
 					<div class="box">
 						<p class="judul text-uppercase">biodata diri</p>
 						<!-- FORM------- -->
-						<form action="update_data.php" method="post">
+						<form action="update_data.php?id_mhs=$id" method="post">
 							<!-- FORM STEP 1 -->
 							<div class="step show-form">
 								<!-- NRP----------- -->
