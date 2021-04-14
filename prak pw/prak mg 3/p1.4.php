@@ -8,10 +8,10 @@ switch ($favcolor) {
         echo "<p style=’color: red;’> Warna terpilih MERAH! </p>";
         break;
     case "blue":
-        echo "<p style=’color: red;’> Warna terpilih BIRU! </p>";
+        echo "<p style=’color: blue;’> Warna terpilih BIRU! </p>";
         break;
     case "green":
-        echo "<p style=’color: red;’> Warna terpilih HIJAU! </p>";
+        echo "<p style=’color: green;’> Warna terpilih HIJAU! </p>";
         break;
     default:
         echo "Coba lagi!";
