@@ -2,7 +2,7 @@
 <html>
 <body>
 <?php
-$favcolor = "red";
+$favcolor = "green";
 switch ($favcolor) {
     case "red":
         echo "<p style=’color: red;’> Warna terpilih MERAH! </p>";
