@@ -12,6 +12,7 @@
 <body>
     <?php 
         include 'koneksi.php';
+        $id_mhs = $_GET['id_mhs'];
         $nrp = $_POST["nrp"];
         $nama = $_POST['nama'];
         $tmptLahir = $_POST["tmptLAHIR"];
@@ -24,10 +25,36 @@
         $lamaStudiBln = $_POST["lama-studi-bln"];
         $ipk = $_POST["ipk"];
         $deskripsi = $_POST["deskripsi"];
+        $sql = "SELECT * FROM mahasiswa WHERE id_mhs = $id_mhs";
+        $result = mysqli_query($konek, $sql);
+        if($result){
+            if(mysqli_num_rows($result) > 0){
+                while($kolom = mysqli_fetch_array($result)){
+                    $id_mhs = $kolom['id_mhs'];
+                    $nrp = $kolom['nrp'];
+                    $nama = $kolom['nama'];
+                    $tmptLahir = $kolom["tmpt_lahir"];
+                    $tglLahir = $kolom["tgl_lahir"];
+                    $gender = $kolom["gender"];
+                    $agama = $kolom['agama'];
+                    $alamat = $kolom["alamat"];
+                    $jurusan = $kolom["jurusan"];
+                    $lamaStudiThn = $kolom["lama_studi_thn"];
+                    $lamaStudiBln = $kolom["lama_studi_bln"];
+                    $ipk = $kolom["ipk"];
+                    $deskripsi = $kolom["desc_diri"];
+                }
+            }
+            else{
+                echo "0 result";
+            }
+        }
+        else{
+            echo "<h1>Error : <br/>" . mysqli_error($konek) . "</h1>";
+        }
     ?>
-    <div class="tampilSec position-relative">
-        <img src="2.png" alt="man" class="man-tampil">
-        <div class="container tampil-box position-absolute">
+    <div class="detail-tampil position-relative">
+        <div class="container tampil-box">
             <p class="halo text-uppercase">data diri anda</p>
             <div class="row">
                 <div class="col-4">
