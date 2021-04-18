@@ -11,33 +11,32 @@
 </head>
 
 <body>
-    <?php 
-        include 'koneksi.php';
-        $id_mhs = $_GET['id_mhs'];
-        $sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id_mhs";
-        $result = mysqli_query($konek, $sql);
+	<?php
+include 'koneksi.php';
+$id_mhs = $_GET['id_mhs'];
+$sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id_mhs";
+$result = mysqli_query($konek, $sql);
 
-        if(mysqli_num_rows($result) > 0){
-            while($kolom = mysqli_fetch_array($result)){
-				$id_mhs = $kolom['id_mhs'];
-				$nrp = $kolom['nrp'];
-                $nama = $kolom['nama'];
-                $tmptLahir = $kolom["tmpt_lahir"];
-                $tglLahir = $kolom["tgl_lahir"];
-                $gender = $kolom["gender"];
-				$agama = $kolom['agama'];
-                $alamat = $kolom["alamat"];
-                $jurusan = $kolom["jurusan"];
-                $lamaStudiThn = $kolom["lama_studi_thn"];
-                $lamaStudiBln = $kolom["lama_studi_bln"];
-                $ipk = $kolom["ipk"];
-                $deskripsi = $kolom["desc_diri"];
-            }
-        }
-        else{
-            echo "0 result";
-        }
-    ?>
+if (mysqli_num_rows($result) > 0) {
+    while ($kolom = mysqli_fetch_array($result)) {
+        $id_mhs = $kolom['id_mhs'];
+        $nrp = $kolom['nrp'];
+        $nama = $kolom['nama'];
+        $tmptLahir = $kolom["tmpt_lahir"];
+        $tglLahir = $kolom["tgl_lahir"];
+        $gender = $kolom["gender"];
+        $agama = $kolom['agama'];
+        $alamat = $kolom["alamat"];
+        $jurusan = $kolom["jurusan"];
+        $lamaStudiThn = $kolom["lama_studi_thn"];
+        $lamaStudiBln = $kolom["lama_studi_bln"];
+        $ipk = $kolom["ipk"];
+        $deskripsi = $kolom["desc_diri"];
+    }
+} else {
+    echo "0 result";
+}
+?>
 	<!-- FORM -->
 	<div class="sec2 position-relative" id="sec2">
 		<div class="container-fluid">
@@ -47,21 +46,21 @@
 					<div class="box">
 						<p class="judul text-uppercase">biodata diri</p>
 						<!-- FORM------- -->
-						<form action="update_data.php" method="post">
+						<form action="update_data.php?id_mhs=<?=$id_mhs?>" method="post">
 							<!-- FORM STEP 1 -->
 							<div class="step show-form">
 								<!-- NRP----------- -->
 								<div class="form-group">
-									<input type="hidden" name="id_mhs" value="<?php $_GET['id_mhs'] ?>">
+									<input type="hidden" name="id_mhs" value="<?php $_GET['id_mhs']?>">
 									<label for="nrp">NRP</label>
-									<input type="text" class="form-control" name="nrp" id="nrp" 
-                                    value="<?php echo $nrp;?>">
+									<input type="text" class="form-control" name="nrp" id="nrp"
+										value="<?php echo $nrp; ?>">
 								</div>
 								<!-- nama---------- -->
 								<div class="form-group">
 									<label for="nama">Nama Lengkap</label>
-									<input type="text" class="form-control" name="nama" id="nama" 
-                                    value="<?php echo $nama;?>">
+									<input type="text" class="form-control" name="nama" id="nama"
+										value="<?php echo $nama; ?>">
 								</div>
 								<!-- TTL----------- -->
 								<div class="form-group">
@@ -69,11 +68,11 @@
 									<div class="row">
 										<div class="col">
 											<input type="text" class="form-control" name="tmptLAHIR" id="ttl"
-												placeholder="Kota Kelahiran" value="<?php echo $tmptLahir;?>">
+												placeholder="Kota Kelahiran" value="<?php echo $tmptLahir; ?>">
 										</div>
 										<div class="col">
 											<input type="date" class="form-control" name="tglLAHIR" id="ttl"
-												placeholder="Tanggal lahir" value="<?php echo $tglLahir;?>">
+												placeholder="Tanggal lahir" value="<?php echo $tglLahir; ?>">
 										</div>
 									</div>
 								</div>
@@ -81,28 +80,39 @@
 								<div class="form-group">
 									<label for="gender">Jenis Kelamin</label>
 									<select class="form-control" id="gender" name="gender">
-										<option value="Laki-laki" <?php echo ($gender == 'Laki-laki' ? 'selected' : '') ?>>Laki-laki</option>
-										<option value="Perempuan" <?php echo ($gender == 'Perempuan' ? 'selected' : '') ?>>Perempuan</option>
+										<option value="Laki-laki"
+											<?php echo ($gender == 'Laki-laki' ? 'selected' : '') ?>>Laki-laki</option>
+										<option value="Perempuan"
+											<?php echo ($gender == 'Perempuan' ? 'selected' : '') ?>>Perempuan</option>
 									</select>
 								</div>
 								<!-- AGAMA---------- -->
 								<div class="form-group">
 									<label for="agama">Agama</label>
 									<select class="form-control" id="agama" name="agama">
-										<option value="Islam" <?php echo ($agama == 'Islam' ? 'selected' : '') ?>>Islam</option>
-										<option value="Kristen Protestan" <?php echo ($agama == 'Kristen Protestan' ? 'selected' : '') ?>>Kristen Protestan</option>
-                                        <option value="Kristen Katolik" <?php echo ($agama == 'Kristen Katolik' ? 'selected' : '') ?>>Kristen Katolik</option>
-										<option value="Hindu" <?php echo ($agama == 'Hindu' ? 'selected' : '') ?>>Hindu</option>
-                                        <option value="Buddha" <?php echo ($agama == 'Buddha' ? 'selected' : '') ?>>Buddha</option>
-                                        <option value="Konghucu" <?php echo ($agama == 'Konghucu' ? 'selected' : '') ?>>Konghucu</option>
-                                        <option value="Lainnya" <?php echo ($agama == 'Lainnya' ? 'selected' : '') ?>>Lainnnya</option>
+										<option value="Islam" <?php echo ($agama == 'Islam' ? 'selected' : '') ?>>Islam
+										</option>
+										<option value="Kristen Protestan"
+											<?php echo ($agama == 'Kristen Protestan' ? 'selected' : '') ?>>Kristen
+											Protestan</option>
+										<option value="Kristen Katolik"
+											<?php echo ($agama == 'Kristen Katolik' ? 'selected' : '') ?>>Kristen
+											Katolik</option>
+										<option value="Hindu" <?php echo ($agama == 'Hindu' ? 'selected' : '') ?>>Hindu
+										</option>
+										<option value="Buddha" <?php echo ($agama == 'Buddha' ? 'selected' : '') ?>>
+											Buddha</option>
+										<option value="Konghucu" <?php echo ($agama == 'Konghucu' ? 'selected' : '') ?>>
+											Konghucu</option>
+										<option value="Lainnya" <?php echo ($agama == 'Lainnya' ? 'selected' : '') ?>>
+											Lainnnya</option>
 									</select>
 								</div>
 								<!-- Alamat-------- -->
 								<div class="form-group">
 									<label for="alamat">Alamat Tempat Tinggal</label>
-									<input type="text" class="form-control" id="alamat" name="alamat" 
-                                    value="<?php echo $alamat;?>">
+									<input type="text" class="form-control" id="alamat" name="alamat"
+										value="<?php echo $alamat; ?>">
 								</div>
 								<br />
 								<!-- NEXT-BTN -->
@@ -111,12 +121,12 @@
 							<!-- END OF FORM STEP 1 -->
 
 							<!-- FORM STEP 2 -->
-							<div class="step2 hide-form"> 
+							<div class="step2 hide-form">
 								<!-- Jurusan----------- -->
 								<div class="form-group">
 									<label for="jurusan">Jurusan</label>
 									<input type="text" class="form-control" name="jurusan" id="jurusan"
-                                    value="<?php echo $jurusan;?>">
+										value="<?php echo $jurusan; ?>">
 								</div>
 								<!-- Lama study---------- -->
 								<div class="form-group">
@@ -124,25 +134,27 @@
 									<div class="row">
 										<div class="col">
 											<input type="text" class="form-control" name="lama-studi-thn"
-												id="lama-studi" placeholder="Tahun" value="<?php echo $lamaStudiThn;?>">
+												id="lama-studi" placeholder="Tahun"
+												value="<?php echo $lamaStudiThn; ?>">
 										</div>
 										<div class="col">
 											<input type="text" class="form-control" name="lama-studi-bln"
-												id="lama-studi" placeholder="Bulan" value="<?php echo $lamaStudiBln;?>">
+												id="lama-studi" placeholder="Bulan"
+												value="<?php echo $lamaStudiBln; ?>">
 										</div>
 									</div>
 								</div>
 								<!-- IPK Terakhir----------- -->
 								<div class="form-group">
 									<label for="ipk">IPK Terakhir</label>
-									<input type="text" class="form-control" name="ipk" id="ipk" 
-									placeholder="4.00 (Gunakan titik sebagai koma)" value="<?php echo $ipk;?>">
+									<input type="text" class="form-control" name="ipk" id="ipk"
+										placeholder="4.00 (Gunakan titik sebagai koma)" value="<?php echo $ipk; ?>">
 								</div>
 								<!-- DESKRIPSI -->
 								<div class="form-group">
 									<label for="deskripsi">Tentang Anda</label>
 									<textarea class="form-control" id="deskripsi" name="deskripsi" rows="5"
-									placeholder="Tuliskan tentang diri Anda kurang dari 250 karakter"><?php echo $deskripsi?></textarea>
+										placeholder="Tuliskan tentang diri Anda kurang dari 250 karakter"><?php echo $deskripsi ?></textarea>
 								</div>
 								<br />
 								<!-- PREV BTN -->
