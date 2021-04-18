@@ -62,12 +62,12 @@
                                 echo "<p class='isi'>$tmptLahir, $tglLahir</p>";
                                 echo "<p class='labelnya'>Jenis Kelamin</p>";
                                 echo "<p class='isi'>$gender</p>";
+                                echo "<p class='labelnya'>Agama</p>";
+                                echo "<p class='isi'>$agama</p>";
                             ?>
                         </div>
                         <div class="col-6">
                             <?php
-                            echo "<p class='labelnya'>Agama</p>";
-                            echo "<p class='isi'>$agama</p>";
                             echo "<p class='labelnya'>Alamat</p>";
                             echo "<p class='isi'>$alamat</p>";
                             echo "<p class='labelnya'>Jurusan</p>";
