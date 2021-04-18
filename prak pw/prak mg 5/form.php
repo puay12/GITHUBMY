@@ -30,7 +30,7 @@
 					<div class="box">
 						<p class="judul text-uppercase">biodata diri</p>
 						<!-- FORM------- -->
-						<form action="tampil.php">
+						<form action="detail_tampil.php">
 							<!-- FORM STEP 1 -->
 							<div class="step show-form">
 								<!-- NRP----------- -->
