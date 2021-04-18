@@ -18,7 +18,8 @@
             lama_studi_bln = '$lamaStudiBln', ipk = '$ipk', desc_diri = '$deskripsi' WHERE id_mhs='$id_mhs'";
 
 	if(mysqli_query($konek, $sql)){
-		header("location:tampil.php");
+        echo "Data berhasil diubah";
+		// header("location:tampil.php");
 	}
 	else{
 		echo "<h1>Error : <br/>" . mysqli_error($konek) . "</h1>";
