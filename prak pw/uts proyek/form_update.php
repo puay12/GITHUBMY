@@ -52,7 +52,7 @@
 							<div class="step show-form">
 								<!-- NRP----------- -->
 								<div class="form-group">
-									<input type="hidden" name="id_mhs" value="<?php $id_mhs = $_GET['id_mhs'] ?>">
+									<input type="hidden" name="id_mhs" value="<?php $_GET['id_mhs'] ?>">
 									<label for="nrp">NRP</label>
 									<input type="text" class="form-control" name="nrp" id="nrp" 
                                     value="<?php echo $nrp;?>">
