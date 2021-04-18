@@ -44,39 +44,41 @@
     <div class="detail-tampil position-relative">
         <div class="container tampil-box">
             <p class="halo text-uppercase">Detail Data</p>
-            <div class="row">
-                <div class="col-6">
-                    <?php
-                        echo "<p class='labelnya'>NRP</p>";
-                        echo "<p class='isi'>$nrp</p>";
-                        echo "<p class='labelnya'>Nama Lengkap</p>";
-                        echo "<p class='isi'>$nama</p>";
-                        echo "<p class='labelnya'>Tempat, Tanggal Lahir</p>";
-                        echo "<p class='isi'>$tmptLahir, $tglLahir</p>";
-                        echo "<p class='labelnya'>Jenis Kelamin</p>";
-                        echo "<p class='isi'>$gender</p>";
-                        echo "<p class='labelnya'>Agama</p>";
-                        echo "<p class='isi'>$agama</p>";
-                    ?>
-                </div>
-                <div class="col-6">
-                    <?php
-                        echo "<p class='labelnya'>Alamat</p>";
-                        echo "<p class='isi'>$alamat</p>";
-                        echo "<p class='labelnya'>Jurusan</p>";
-                        echo "<p class='isi'>$jurusan</p>";
-                        echo "<p class='labelnya'>Lama Studi</p>";
-                        if($lamaStudiBln != 0){
-                            echo "<p class='isi'>$lamaStudiThn tahun $lamaStudiBln bulan</p>";
-                        }
-                        else{
-                            echo "<p class='isi'>$lamaStudiThn tahun</p>";
-                        }
-                        echo "<p class='labelnya'>IPK Terakhir</p>";
-                        echo "<p class='isi'>$ipk</p>";
-                        echo "<p class='labelnya'>Deskripsi Diri</p>";
-                        echo "<p class='isi'>$deskripsi</p>";
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-6">
+                        <?php
+                            echo "<p class='labelnya'>NRP</p>";
+                            echo "<p class='isi'>$nrp</p>";
+                            echo "<p class='labelnya'>Nama Lengkap</p>";
+                            echo "<p class='isi'>$nama</p>";
+                            echo "<p class='labelnya'>Tempat, Tanggal Lahir</p>";
+                            echo "<p class='isi'>$tmptLahir, $tglLahir</p>";
+                            echo "<p class='labelnya'>Jenis Kelamin</p>";
+                            echo "<p class='isi'>$gender</p>";
+                            echo "<p class='labelnya'>Agama</p>";
+                            echo "<p class='isi'>$agama</p>";
                         ?>
+                    </div>
+                    <div class="col-6">
+                        <?php
+                            echo "<p class='labelnya'>Alamat</p>";
+                            echo "<p class='isi'>$alamat</p>";
+                            echo "<p class='labelnya'>Jurusan</p>";
+                            echo "<p class='isi'>$jurusan</p>";
+                            echo "<p class='labelnya'>Lama Studi</p>";
+                            if($lamaStudiBln != 0){
+                                echo "<p class='isi'>$lamaStudiThn tahun $lamaStudiBln bulan</p>";
+                            }
+                            else{
+                                echo "<p class='isi'>$lamaStudiThn tahun</p>";
+                            }
+                            echo "<p class='labelnya'>IPK Terakhir</p>";
+                            echo "<p class='isi'>$ipk</p>";
+                            echo "<p class='labelnya'>Deskripsi Diri</p>";
+                            echo "<p class='isi'>$deskripsi</p>";
+                            ?>
+                    </div>
                 </div>
             </div>
         </div>
