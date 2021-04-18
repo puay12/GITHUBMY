@@ -116,7 +116,7 @@
 								<!-- PREV BTN -->
 								<button class="btn btn-main" type="button" id="prevbtn">Prev</button>
 								<!-- SUBMIT BTN -->
-								<button class="btn btn-main" id="submitbtn">Submit</button>
+								<button class="btn btn-main" type="submit" id="submitbtn">Submit</button>
 							</div>
 							<!-- END OF FORM STEP 2 -->
 						</form>
