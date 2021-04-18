@@ -252,22 +252,26 @@ img{
 
 .detail-tampil .tampil-box{
     background: #fff;
-    padding: 32px 32px;
+    padding: 40px 40px;
     border-radius: 10px;
     box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .detail-tampil .col-6{
-    padding: 32px 32px;
+    padding: 40px 40px;
 }
 
 .detail-tampil p.halo{
     font-weight: bolder;
     font-size: 36px;
-    color: rgb(0, 2, 99);
+    color: rgb(0, 1, 63);
     text-align: center;
     text-decoration-line: underline;
     line-height: 3px;
+    margin-bottom: 24px;
 }
 
 .detail-tampil p.labelnya{
