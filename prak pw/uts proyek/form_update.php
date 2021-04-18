@@ -13,13 +13,13 @@
 <body>
     <?php 
         include 'koneksi.php';
-        $id = $_GET['id_mhs'];
-        $sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id";
+        $id_mhs = $_GET['id_mhs'];
+        $sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id_mhs";
         $result = mysqli_query($konek, $sql);
 
         if(mysqli_num_rows($result) > 0){
             while($kolom = mysqli_fetch_array($result)){
-				$id = $kolom['id_mhs'];
+				$id_mhs = $kolom['id_mhs'];
 				$nrp = $kolom['nrp'];
                 $nama = $kolom['nama'];
                 $tmptLahir = $kolom["tmpt_lahir"];
