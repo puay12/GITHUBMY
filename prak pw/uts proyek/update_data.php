@@ -15,7 +15,7 @@
     $deskripsi = $_POST["deskripsi"];
     $sql = "UPDATE mahasiswa SET nama = '$nama', tmpt_lahir = '$tmptLahir', tgl_lahir = '$tglLahir',
             gender = '$gender', agama = '$agama', alamat = '$alamat', jurusan = '$jurusan', lama_studi_thn = '$lamaStudiThn',
-            lama_studi_bln = '$lamaStudiBln', ipk = '$ipk', desc_diri = '$deskripsi'  WHERE id_mhs=$id_mhs";
+            lama_studi_bln = '$lamaStudiBln', ipk = '$ipk', desc_diri = '$deskripsi'  WHERE id_mhs='$id_mhs'";
 
 	if(mysqli_query($konek, $sql)){
 		header("location:tampil.php");
