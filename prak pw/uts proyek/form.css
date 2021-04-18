@@ -10,7 +10,6 @@ body{
     font-family: 'Poppins', sans-serif;
     color: #000;
     letter-spacing: 2px;
-    padding: 5px 5px;
 }
 
 a{
@@ -252,7 +251,7 @@ img{
 }
 
 .detail-tampil .tampil-box{
-    background: rgba(188, 255, 255, 0.2);
+    background: rgba(240, 255, 255, 0.2);
     padding: 32px 32px;
     padding-left: 24px;
     border-radius: 10px;
@@ -264,17 +263,17 @@ img{
     border-radius: 50%;
     width: 250px;
     height: 250px;
-    left: 0;
+    left: 3%;
     top: 50%;
-    transform: translate(0%, -50%);
+    transform: translate(-3%, -50%);
 }
 
 .detail-tampil img.me{
     width: 200px;
     height: 320px;
-    left: -10%;
+    left: -15%;
     bottom: 22%;
-    transform: translate(10%, -22%);
+    transform: translate(15%, -22%);
 }
 
 .detail-tampil .col-6{
