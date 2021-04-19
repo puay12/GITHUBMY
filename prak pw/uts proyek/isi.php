@@ -1,18 +1,18 @@
 <?php 
     include 'koneksi.php';
     $id = $_GET['id_mhs'];
-    $nrp = $_POST["nrp"];
+    $nrp = $_POST['nrp'];
     $nama = $_POST['nama'];
-    $tmptLahir = $_POST["tmptLAHIR"];
-    $tglLahir = $_POST["tglLAHIR"];
-    $gender = $_POST["gender"];
+    $tmptLahir = $_POST['tmptLAHIR'];
+    $tglLahir = $_POST['tglLAHIR'];
+    $gender = $_POST['gender'];
     $agama = $_POST['agama'];
-    $alamat = $_POST["alamat"];
-    $jurusan = $_POST["jurusan"];
-    $lamaStudiThn = $_POST["lama-studi-thn"];
-    $lamaStudiBln = $_POST["lama-studi-bln"];
-    $ipk = $_POST["ipk"];
-    $deskripsi = $_POST["deskripsi"];
+    $alamat = $_POST['alamat'];
+    $jurusan = $_POST['jurusan'];
+    $lamaStudiThn = $_POST['lama-studi-thn'];
+    $lamaStudiBln = $_POST['lama-studi-bln'];
+    $ipk = $_POST['ipk'];
+    $deskripsi = $_POST['deskripsi'];
     $sql = "INSERT INTO mahasiswa(nrp, nama, tmpt_lahir, tgl_lahir, gender, agama, alamat, jurusan, lama_studi_thn, 
     lama_studi_bln, ipk, desc_diri) VALUES ('$nrp', '$nama', '$tmptLahir', '$tglLahir', '$gender', 
     '$agama', '$alamat', '$jurusan', '$lamaStudiThn', '$lamaStudiBln', '$ipk', '$deskripsi')"; 

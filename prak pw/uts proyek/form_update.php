@@ -12,31 +12,31 @@
 
 <body>
 	<?php
-include 'koneksi.php';
-$id_mhs = $_GET['id_mhs'];
-$sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id_mhs";
-$result = mysqli_query($konek, $sql);
+		include 'koneksi.php';
+		$id_mhs = $_GET['id_mhs'];
+		$sql = "SELECT * FROM mahasiswa WHERE id_mhs=$id_mhs";
+		$result = mysqli_query($konek, $sql);
 
-if (mysqli_num_rows($result) > 0) {
-    while ($kolom = mysqli_fetch_array($result)) {
-        $id_mhs = $kolom['id_mhs'];
-        $nrp = $kolom['nrp'];
-        $nama = $kolom['nama'];
-        $tmptLahir = $kolom["tmpt_lahir"];
-        $tglLahir = $kolom["tgl_lahir"];
-        $gender = $kolom["gender"];
-        $agama = $kolom['agama'];
-        $alamat = $kolom["alamat"];
-        $jurusan = $kolom["jurusan"];
-        $lamaStudiThn = $kolom["lama_studi_thn"];
-        $lamaStudiBln = $kolom["lama_studi_bln"];
-        $ipk = $kolom["ipk"];
-        $deskripsi = $kolom["desc_diri"];
-    }
-} else {
-    echo "0 result";
-}
-?>
+		if (mysqli_num_rows($result) > 0) {
+			while ($kolom = mysqli_fetch_array($result)) {
+				$id_mhs = $kolom['id_mhs'];
+				$nrp = $kolom['nrp'];
+				$nama = $kolom['nama'];
+				$tmptLahir = $kolom["tmpt_lahir"];
+				$tglLahir = $kolom["tgl_lahir"];
+				$gender = $kolom["gender"];
+				$agama = $kolom['agama'];
+				$alamat = $kolom["alamat"];
+				$jurusan = $kolom["jurusan"];
+				$lamaStudiThn = $kolom["lama_studi_thn"];
+				$lamaStudiBln = $kolom["lama_studi_bln"];
+				$ipk = $kolom["ipk"];
+				$deskripsi = $kolom["desc_diri"];
+			}
+		} else {
+			echo "0 result";
+		}
+	?>
 	<!-- FORM -->
 	<div class="sec2 position-relative" id="sec2">
 		<div class="container-fluid">
