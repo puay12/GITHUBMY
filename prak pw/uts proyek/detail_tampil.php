@@ -51,7 +51,7 @@
                 </div>
                 <div class="col-9">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-6 first">
                             <?php
                                 echo "<p class='labelnya'>NRP</p>";
                                 echo "<p class='isi'>$nrp</p>";
