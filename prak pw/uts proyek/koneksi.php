@@ -6,6 +6,6 @@
 
     $konek = mysqli_connect($servername, $username, $password, $dbname);
     if(!$konek){
-        die("Koneksi gagal : " . mysqli_connect_error());
+        die("Koneksi gagal : " . mysqli_connect_error($konek));
     }
 ?>
