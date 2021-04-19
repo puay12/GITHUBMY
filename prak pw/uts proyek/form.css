@@ -253,6 +253,7 @@ img{
 .detail-tampil .tampil-box{
     background: #fff;
     padding: 40px 40px;
+    padding-left: 12px;
     padding-bottom: 5px;
     border-radius: 10px;
     box-shadow: 0px 3px 50px rgba(0,0,0,0.2);
@@ -262,7 +263,7 @@ img{
 }
 
 .detail-tampil img.me{
-    width: 250px;
+    width: 260px;
     height: 400px;
 }
 
