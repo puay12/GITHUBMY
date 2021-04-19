@@ -265,7 +265,7 @@ img{
 .detail-tampil img.me{
     width: 260px;
     height: 400px;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 
 .detail-tampil .col-6{
