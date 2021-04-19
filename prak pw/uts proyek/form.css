@@ -261,6 +261,11 @@ img{
     transform: translateY(-50%);
 }
 
+.detail-tampil img.me{
+    width: 400px;
+    height: 600px;
+}
+
 .detail-tampil .col-6{
     padding: 40px 40px;
 }
