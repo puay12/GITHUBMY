@@ -265,10 +265,15 @@ img{
 .detail-tampil img.me{
     width: 260px;
     height: 400px;
+    border-radius: 50%;
 }
 
 .detail-tampil .col-6{
     padding: 40px 40px;
+}
+
+.detail-tampil .col-9{
+    padding-left: 12px;
 }
 
 .detail-tampil p.halo{
