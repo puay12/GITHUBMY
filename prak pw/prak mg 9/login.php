@@ -3,7 +3,7 @@ session_start();
 $errormsg = '';
 
 if(isset($_POST['userid']) && isset($_POST['userpswd'])){
-    include '/config/koneksi.php';
+    include 'config/koneksi.php';
     $userid = $_POST['userid'];
     $userpswd = $_POST['userpswd'];
     $sql = "SELECT userid
@@ -22,7 +22,7 @@ if(isset($_POST['userid']) && isset($_POST['userpswd'])){
         $errormsg = 'Maaf, id atau password salah';
         echo $errormsg;
     }
-    include '/config/closedb.php';
+    include 'config/closedb.php';
 }
 ?>
 
