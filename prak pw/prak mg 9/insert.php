@@ -1,5 +1,5 @@
 <?php 
-include '/config/koneksi.php';
+include 'config/koneksi.php';
 $nama = $_POST['nama'];
 $nrp = $_POST['nrp'];
 $tmpt_lahir = $_POST['tmptLAHIR'];
@@ -21,5 +21,5 @@ if($result){
 else{
     echo "Error : " . mysqli_error($konek) . "<br/>";
 }
-include '/config/closedb.php';
+include 'config/closedb.php';
 ?>

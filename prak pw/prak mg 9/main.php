@@ -1,12 +1,3 @@
-<?php 
-session_start();
-
-if(!isset($_SESSION['login']) || isset($_SESSION['login'] != true)){
-    header("Location : login.php");
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,8 +5,9 @@ if(!isset($_SESSION['login']) || isset($_SESSION['login'] != true)){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
+    <link rel="icon" href="asset/img/logo-title.png">
     <link rel="stylesheet" href="asset/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="asset/css/main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -27,15 +19,15 @@ if(!isset($_SESSION['login']) || isset($_SESSION['login'] != true)){
             <div class="sidebar-menu container-fluid">
                 <ul>
                     <li id="prof">
-                        <a href="#" class="link1 active"><span class="fa fa-users"></span>
+                        <a href="#" class="link1 active"><span class="fa fa-user-circle"></span>
                             <span class="list">Profil User</span></a>
                     </li>
                     <li id="datamhs">
-                        <a href="#" class="link2"><span class="fa fa-trophy"></span>
+                        <a href="#" class="link2"><span class="fa fa-users"></span>
                             <span class="list">Data Mahasiswa</span></a>
                     </li>
                     <li id="datatugas">
-                        <a href="#" class="link3"><span class="fa fa-trophy"></span>
+                        <a href="#" class="link3"><span class="fa fa-book"></span>
                             <span class="list">Data Tugas</span></a>
                     </li>
                 </ul>
@@ -44,8 +36,8 @@ if(!isset($_SESSION['login']) || isset($_SESSION['login'] != true)){
 
         <div class="main-content">
             <header>
-                <h6>Selamat Datang di Admin</h6>
-                <h4><a href="logout.php">Logout</a></h4>
+                <p>Selamat Datang di Admin</p>
+                <a href="logout.php">Logout</a>
             </header>
         </div>
     </div>
