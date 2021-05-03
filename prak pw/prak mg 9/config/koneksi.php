@@ -1,8 +1,8 @@
 <?php 
     $servername = "localhost";
-    $username = "3120600018";
-    $password = "3120600018panaz";
-    $dbname = "3120600018";
+    $username = "ubuntu";
+    $password = "12345678";
+    $dbname = "prak_pw";
 
     $konek = mysqli_connect($servername, $username, $password, $dbname);
     if(!$konek){
