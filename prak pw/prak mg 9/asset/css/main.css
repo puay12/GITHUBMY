@@ -70,6 +70,7 @@ img{
     bottom: 1%;
     left: 50%;
     transform: translate(-50%, -1%);
+    margin-bottom: 24px;
 }
 
 .login-sec button.btn-main:hover{
@@ -78,7 +79,6 @@ img{
 
 .login-sec h6{
     position: relative;
-    margin-top: 24px;
     font-size: 12px;
 }
 
