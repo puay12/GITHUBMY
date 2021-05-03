@@ -76,7 +76,12 @@ img{
     background: #ff724f;
 }
 
-.login-sec h5 a{
+.login-sec h6{
+    font-size: 12px;
+}
+
+.login-sec h6 a{
+    font-size: 12px;
     color: rgb(100, 162, 255);
 }
 

@@ -58,7 +58,7 @@ if(isset($_POST['userid']) && isset($_POST['userpswd'])){
 					<input type="password" class="form-control" name="userpswd" id="pswd">
 				</div>
                 <button class="btn btn-main" type="submit">Masuk</button>
-                <h5 class="text-center">Belum punya akun? <a href="regist.php">Daftar</a></h5>
+                <h6 class="text-center">Belum punya akun? <a href="regist.php">Daftar</a></h6>
             </form>
         </div>
     </div>
