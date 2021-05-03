@@ -77,7 +77,8 @@ img{
 }
 
 .login-sec h6{
-    margin-top: 32px;
+    position: relative;
+    margin-top: 24px;
     font-size: 12px;
 }
 
