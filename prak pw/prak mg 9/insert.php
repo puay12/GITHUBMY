@@ -12,7 +12,7 @@ $userpswd = $_POST['userpswd'];
 
 $sql = "INSERT INTO login_user
         VALUES('$userid', '$userpswd', '$nama', '$nrp', '$tmpt_lahir', '$tgl_lahir',
-                '$alamat', $nohp, '$email')";
+                '$alamat', '$nohp', '$email')";
 $result = mysqli_query($konek, $sql);
 
 if($result){
