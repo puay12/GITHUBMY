@@ -1,3 +1,7 @@
+<?php 
+    
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,17 +22,9 @@
             <img src="asset/img/logo.png" alt="DSS Scholarship" class="logo">
             <div class="sidebar-menu container-fluid">
                 <ul>
-                    <li id="prof">
-                        <a href="#" class="link1 active"><span class="fa fa-user-circle"></span>
-                            <span class="list">Profil User</span></a>
-                    </li>
-                    <li id="datamhs">
-                        <a href="#" class="link2"><span class="fa fa-users"></span>
-                            <span class="list">Data Mahasiswa</span></a>
-                    </li>
-                    <li id="datatugas">
-                        <a href="#" class="link3"><span class="fa fa-book"></span>
-                            <span class="list">Data Tugas</span></a>
+                    <li>
+                        <a href="#" class="active"><span class="fa fa-desktop"></span>
+                            <span class="list">Detail Data</span></a>
                     </li>
                 </ul>
             </div>
@@ -36,11 +32,10 @@
 
         <div class="main-content">
             <header>
-                <p>Selamat Datang di Admin</p>
-                <a href="logout.php">Logout</a>
+                <p>Data -SI FULAN-</p>
             </header>
-            <!-- PROFIL USER--------- -->
-            <div class="container-fluid content-profil show">
+            <!-- DETAIL-------- -->
+            <div class="container-fluid content-detail show" id="link-detail">
                 <div class="row">
                     <div class="col-md-8">
                         <table class="table table-striped">
@@ -92,43 +87,12 @@
                         <img src="asset/img/me.jpg" alt="photo">
                     </div>
                 </div>
-            </div>
-            <!-- DATA MAHASISWA --------->
-            <div class="container-fluid content-datmhs hides">
-                <div class="row">
-                    <div class="col">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">No</th>
-                                    <th scope="col">NRP</th>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col">Detail</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>3120600018</td>
-                                    <td>Putri Ayu Nisa Az-Zahra</td>
-                                    <td><a href="#">Lihat</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>3120600018</td>
-                                    <td>Putri Ayu Nisa Az-Zahra</td>
-                                    <td><a href="#">Lihat</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>3120600018</td>
-                                    <td>Putri Ayu Nisa Az-Zahra</td>
-                                    <td><a href="#">Lihat</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
+                <!-- petunjuk -->
+                <p class="petunjuk">Klik tombol di bawah ini untuk kembali ke halaman sebelumnya.</p>
+                <!-- button kembali -->
+                <a href="main.php">
+                    <button type="button" class="btn btn-main prev">Kembali</button>
+                </a>
             </div>
         </div>
     </div>
@@ -136,6 +100,5 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="asset/js/main.js"></script>
 
 </html>

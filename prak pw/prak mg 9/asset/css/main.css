@@ -266,8 +266,8 @@ img{
 
 .home-sec .main-content {
     margin-left:310px;
-    padding-top: .5rem;
-    margin-right: 10px;
+    padding: 24px 24px;
+    margin-right: 12px;
 }
 
 .home-sec header {
@@ -279,6 +279,7 @@ img{
     box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
     height: 60px;
     color: #F5FAFF;
+    margin-bottom: 32px;
 }
 
 .home-sec h6{
@@ -293,4 +294,63 @@ img{
 .home-sec header a{
     color: #F5FAFF;
     font-weight: 500;
+}
+
+.home-sec .content-profil{
+    padding: 32px 32px;
+    margin-top: 24px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.home-sec .content-detail{
+    padding: 32px 32px;
+    margin-top: 24px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.home-sec .content img{
+    width: 270px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+p.petunjuk{
+    font-size: 12px;
+    font-weight: 550;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.home-sec button.prev{
+    padding: 0.5rem 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 2px;
+    background: #e7532e;
+    transition: ease 0.3s;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 32px;
+    position: relative;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -1%);
+}
+
+.home-sec button.prev:hover{
+    background: transparent;
+    border: 1px solid #e7532e;
+    color: #e7532e;
+}
+
+.show{
+    display: block;
+}
+
+.hides{
+    display: none;
 }
