@@ -6,6 +6,6 @@ if(isset($_SESSION['login'])){
     unset($_SESSION['login']);
 }
 
-header('Location : login.php');
+header('location:login.php');
 include 'config/closedb.php';
 ?>

@@ -19,6 +19,7 @@
                     <!-- NAMA -->
                     <div class="form-group">
                         <label for="nama">Nama</label>
+                        <input type="hidden" class="form-control" name="id_login" id="nama">
                         <input type="text" class="form-control" name="nama" id="nama">
                     </div>
                     <!-- NRP---------- -->

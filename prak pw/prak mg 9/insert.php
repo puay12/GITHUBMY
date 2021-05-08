@@ -1,5 +1,6 @@
 <?php 
 include 'config/koneksi.php';
+$id_login = $_POST['id_login'];
 $nama = $_POST['nama'];
 $nrp = $_POST['nrp'];
 $tmpt_lahir = $_POST['tmptLAHIR'];
@@ -16,7 +17,7 @@ $sql = "INSERT INTO login_user(userid, userpswd, nama, nrp, tmpt_lahir, tgl_lahi
 $result = mysqli_query($konek, $sql);
 
 if($result){
-    header('Location : login.php');
+    header('location:login.php');
 }
 else{
     echo "Error : " . mysqli_error($konek) . "<br/>";
