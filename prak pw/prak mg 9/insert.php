@@ -16,6 +16,7 @@ $sql = "INSERT INTO login_user(userid, userpswd, nama, nrp, tmpt_lahir, tgl_lahi
                 '$alamat', '$nohp', '$email')";
 $result = mysqli_query($konek, $sql);
 
+// kalau berhasil
 if($result){
     header('location:login.php');
 }

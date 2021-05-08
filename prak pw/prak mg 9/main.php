@@ -130,6 +130,7 @@
                     </div>
                 </div>
             </div>
+            <!-- DATA DETAIL -->
         </div>
     </div>
 </body>
