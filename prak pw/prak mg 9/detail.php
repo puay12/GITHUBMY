@@ -67,9 +67,6 @@
         </div>
 
         <div class="main-content">
-            <header>
-                <p>Data <?php echo "$nama";?></p>
-            </header>
             <!-- DETAIL-------- -->
             <div class="container-fluid content-detail show" id="link-detail">
                 <div class="row">
