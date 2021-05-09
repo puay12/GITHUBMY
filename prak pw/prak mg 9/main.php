@@ -59,7 +59,7 @@
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
-<body>\\\\
+<body>
     <div class="home-sec">
         <div class="sidebar position-fixed" id="sidebar">
             <img src="asset/img/logo.png" alt="DSS Scholarship" class="logo">
