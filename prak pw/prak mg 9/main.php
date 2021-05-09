@@ -15,7 +15,7 @@
             $sql_profil  = "SELECT *
                             FROM login_user
                             WHERE userid = '$userid' AND userpswd = '$userpswd'";
-            $sql_datmhs  = "SELECT id_login, nrp, nama
+            $sql_datmhs  = "SELECT *
                             FROM login_user";
             $result_profil = mysqli_query($konek, $sql_profil);
             $result_datmhs = mysqli_query($konek, $sql_datmhs);
