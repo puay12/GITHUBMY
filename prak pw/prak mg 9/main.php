@@ -16,7 +16,8 @@
                     FROM login_user
                     WHERE userid = '$userid' AND userpswd = '$userpswd'";
     $sql_datmhs  = "SELECT *
-                    FROM login_user";
+                    FROM login_user
+                    WHERE userid NOT LIKE '$userid'";
     $result_profil = mysqli_query($konek, $sql_profil);
     $result_datmhs = mysqli_query($konek, $sql_datmhs);
     $no = 1;
