@@ -66,7 +66,7 @@
             </div>
         </div>
 
-        <div class="main-content">
+        <div class="main-content detail">
             <!-- DETAIL-------- -->
             <div class="container-fluid content-detail show" id="link-detail">
                 <div class="row">

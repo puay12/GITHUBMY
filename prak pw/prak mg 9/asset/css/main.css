@@ -270,6 +270,10 @@ img{
     margin-right: 12px;
 }
 
+.home-sec .main-content.detail{
+    padding: 12px 12px;
+}
+
 .home-sec header {
     display: flex;
     background: #001833;
