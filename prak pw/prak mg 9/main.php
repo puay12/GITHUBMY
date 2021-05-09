@@ -1,3 +1,51 @@
+<?php 
+    session_start();
+    $errormsg = '';
+    include 'config/koneksi.php';
+    if(isset($_POST['userid']) && isset($_POST['userpswd'])){
+        if($_SESSION['login'] != true){
+            echo "Login gagal";
+            header('location:login.php');
+            exit;
+        }
+        else{
+            $id_login = $_GET['id_login'];
+            $userid = $_POST['userid'];
+            $userpswd = $_POST['userpswd'];
+            $sql_profil  = "SELECT *
+                            FROM login_user
+                            WHERE userid = '$userid' AND userpswd = '$userpswd'";
+            $sql_datmhs  = "SELECT id_login, nrp, nama
+                            FROM login_user";
+            $result_profil = mysqli_query($konek, $sql_profil);
+            $result_datmhs = mysqli_query($konek, $sql_datmhs);
+            $no = 1;
+            if($result_profil){
+                if(mysqli_num_rows($result_profil) > 0){
+                    while($kolom = mysqli_fetch_array($result_profil)){
+                        $id_login_admin = $kolom['id_login'];
+                        $nrp_admin = $kolom['nrp'];
+                        $nama_admin = $kolom['nama'];
+                        $tmpt_lahir_admin = $kolom['tmpt_lahir'];
+                        $tgl_lahir_admin = $kolom['tgl_lahir'];
+                        $notelp_admin = $kolom['notelp'];
+                        $alamat_admin = $kolom['alamat'];
+                        $userid = $kolom['userid'];
+                        $userpswd = $kolom['userpswd'];
+                        $email_admin = $kolom['email'];
+                    }
+                }
+                else{
+                    echo "Data tidak ada atau data = 0";
+                }
+            }
+            else{
+                echo "Error : " . mysqli_error($konek) . "<br/>";
+            }
+        }
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,42 +96,47 @@
                                 <tr>
                                     <td>Nama</td>
                                     <td>:</td>
-                                    <td>Putri Ayu Nisa Az-Zahra</td>
+                                    <td><?php echo '$nama_admin';?></td>
                                 </tr>
                                 <tr>
                                     <td>NRP</td>
                                     <td>:</td>
-                                    <td>3120600018</td>
+                                    <td><?php echo '$nrp_admin';?></td>
                                 </tr>
                                 <tr>
                                     <td>Tempat Lahir</td>
                                     <td>:</td>
-                                    <td>Balikpapan</td>
+                                    <td><?php echo '$tmpt_lahir_admin';?></td>
+                                </tr>
+                                <tr>
+                                    <td>Tanggal Lahir</td>
+                                    <td>:</td>
+                                    <td><?php echo '$tgl_lahir_admin';?></td>
                                 </tr>
                                 <tr>
                                     <td>Alamat</td>
                                     <td>:</td>
-                                    <td>JL.DI.Panjaitan RT.06 No.92 Gn.Samarinda</td>
+                                    <td><?php echo '$alamat_admin';?></td>
                                 </tr>
                                 <tr>
                                     <td>No Telepon</td>
                                     <td>:</td>
-                                    <td>(+62) 83153423231</td>
+                                    <td>(+62) <?php echo '$notelp_admin';?></td>
                                 </tr>
                                 <tr>
                                     <td>Email</td>
                                     <td>:</td>
-                                    <td>puayyssii12@gmail.com</td>
+                                    <td><?php echo '$email_admin';?></td>
                                 </tr>
                                 <tr>
                                     <td>Username</td>
                                     <td>:</td>
-                                    <td>puay12</td>
+                                    <td><?php echo '$userid';?></td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
                                     <td>:</td>
-                                    <td>Jenonim1244</td>
+                                    <td><?php echo '$userpswd';?></td>
                                 </tr>
                             </tbody>  
                         </table>
@@ -107,30 +160,38 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>3120600018</td>
-                                    <td>Putri Ayu Nisa Az-Zahra</td>
-                                    <td><a href="#">Lihat</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>3120600018</td>
-                                    <td>Putri Ayu Nisa Az-Zahra</td>
-                                    <td><a href="#">Lihat</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>3120600018</td>
-                                    <td>Putri Ayu Nisa Az-Zahra</td>
-                                    <td><a href="#">Lihat</a></td>
-                                </tr>
+                                <?php 
+                                    if($result_datmhs){
+                                        if(mysqli_num_rows($result_datmhs) > 0){
+                                            while($kolom = mysqli_fetch_array($result_datmhs)){
+                                                $id_login = $kolom['id_login'];
+                                                $nrp = $kolom['nrp'];
+                                                $nama = $kolom['nama'];
+                                                echo "<tr>
+                                                        <th scope='row'>$no</th>
+                                                        <td>$nrp</td>
+                                                        <td>$nama</td>
+                                                        <td><a href='detail.php?id_login=$id_login'>Lihat</a></td>
+                                                    </tr>";
+                                                $no++;
+                                            }
+                                        } 
+                                        else{
+                                            echo "<tr>
+                                                    <th>Data tidak ada atau data = 0</th>
+                                                </tr>";
+                                        }
+                                    }
+                                    else{
+                                        echo "Error : " . mysqli_error($konek) . "<br/>";
+                                    }
+                                    include 'config/closedb.php';
+                                ?>
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
-            <!-- DATA DETAIL -->
         </div>
     </div>
 </body>
