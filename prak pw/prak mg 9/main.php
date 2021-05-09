@@ -96,47 +96,47 @@
                                 <tr>
                                     <td>Nama</td>
                                     <td>:</td>
-                                    <td><?php echo '$nama_admin';?></td>
+                                    <td><?php echo $nama_admin;?></td>
                                 </tr>
                                 <tr>
                                     <td>NRP</td>
                                     <td>:</td>
-                                    <td><?php echo '$nrp_admin';?></td>
+                                    <td><?php echo $nrp_admin;?></td>
                                 </tr>
                                 <tr>
                                     <td>Tempat Lahir</td>
                                     <td>:</td>
-                                    <td><?php echo '$tmpt_lahir_admin';?></td>
+                                    <td><?php echo $tmpt_lahir_admin;?></td>
                                 </tr>
                                 <tr>
                                     <td>Tanggal Lahir</td>
                                     <td>:</td>
-                                    <td><?php echo '$tgl_lahir_admin';?></td>
+                                    <td><?php echo $tgl_lahir_admin;?></td>
                                 </tr>
                                 <tr>
                                     <td>Alamat</td>
                                     <td>:</td>
-                                    <td><?php echo '$alamat_admin';?></td>
+                                    <td><?php echo $alamat_admin;?></td>
                                 </tr>
                                 <tr>
                                     <td>No Telepon</td>
                                     <td>:</td>
-                                    <td><?php echo '$notelp_admin';?></td>
+                                    <td><?php echo $notelp_admin;?></td>
                                 </tr>
                                 <tr>
                                     <td>Email</td>
                                     <td>:</td>
-                                    <td><?php echo '$email_admin';?></td>
+                                    <td><?php echo $email_admin;?></td>
                                 </tr>
                                 <tr>
                                     <td>Username</td>
                                     <td>:</td>
-                                    <td><?php echo '$userid';?></td>
+                                    <td><?php echo $userid;?></td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
                                     <td>:</td>
-                                    <td><?php echo '$userpswd';?></td>
+                                    <td><?php echo $userpswd;?></td>
                                 </tr>
                             </tbody>  
                         </table>
