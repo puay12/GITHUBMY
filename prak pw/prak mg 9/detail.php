@@ -101,7 +101,7 @@
                                 <tr>
                                     <td>No Telepon</td>
                                     <td>:</td>
-                                    <td>(+62) <?php echo $notelp;?></td>
+                                    <td><?php echo $notelp;?></td>
                                 </tr>
                                 <tr>
                                     <td>Email</td>
