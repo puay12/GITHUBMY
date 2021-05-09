@@ -8,35 +8,33 @@
             header('location:login.php');
             exit;
         }
-        else{
-            $id_login = $_GET['id_login'];
-            $sql = "SELECT *
-                    FROM login_user
-                    WHERE id_login = $id_login";
-            $result = mysqli_query($konek, $sql);
-            if($result){
-                if(mysqli_num_rows($result) > 0){
-                    while($kolom = mysqli_fetch_array($result)){
-                        $id_login = $kolom['id_login'];
-                        $nrp = $kolom['nrp'];
-                        $nama = $kolom['nama'];
-                        $tmpt_lahir = $kolom['tmpt_lahir'];
-                        $tgl_lahir = $kolom['tgl_lahir'];
-                        $notelp = $kolom['notelp'];
-                        $alamat = $kolom['alamat'];
-                        $userid = $kolom['userid'];
-                        $userpswd = $kolom['userpswd'];
-                        $email = $kolom['email'];
-                    }
-                }
-                else{
-                    echo "Data tidak ada atau data = 0";
-                }
-            }
-            else{
-                echo "Error : " . mysqli_error($konek) . "<br/>";
+    }
+    $id_login = $_GET['id_login'];
+    $sql = "SELECT *
+            FROM login_user
+            WHERE id_login = $id_login";
+    $result = mysqli_query($konek, $sql);
+    if($result){
+        if(mysqli_num_rows($result) > 0){
+            while($kolom = mysqli_fetch_array($result)){
+                $id_login = $kolom['id_login'];
+                $nrp = $kolom['nrp'];
+                $nama = $kolom['nama'];
+                $tmpt_lahir = $kolom['tmpt_lahir'];
+                $tgl_lahir = $kolom['tgl_lahir'];
+                $notelp = $kolom['notelp'];
+                $alamat = $kolom['alamat'];
+                $userid = $kolom['userid'];
+                $userpswd = $kolom['userpswd'];
+                $email = $kolom['email'];
             }
         }
+        else{
+            echo "Data tidak ada atau data = 0";
+        }
+    }
+    else{
+        echo "Error : " . mysqli_error($konek) . "<br/>";
     }
 ?>
 
@@ -81,47 +79,47 @@
                                 <tr>
                                     <td>Nama</td>
                                     <td>:</td>
-                                    <td><?php echo '$nama';?></td>
+                                    <td><?php echo $nama;?></td>
                                 </tr>
                                 <tr>
                                     <td>NRP</td>
                                     <td>:</td>
-                                    <td><?php echo '$nrp';?></td>
+                                    <td><?php echo $nrp;?></td>
                                 </tr>
                                 <tr>
                                     <td>Tempat Lahir</td>
                                     <td>:</td>
-                                    <td><?php echo '$tmpt_lahir';?></td>
+                                    <td><?php echo $tmpt_lahir;?></td>
                                 </tr>
                                 <tr>
                                     <td>Tanggal Lahir</td>
                                     <td>:</td>
-                                    <td><?php echo '$tgl_lahir';?></td>
+                                    <td><?php echo $tgl_lahir;?></td>
                                 </tr>
                                 <tr>
                                     <td>Alamat</td>
                                     <td>:</td>
-                                    <td><?php echo '$alamat';?></td>
+                                    <td><?php echo $alamat;?></td>
                                 </tr>
                                 <tr>
                                     <td>No Telepon</td>
                                     <td>:</td>
-                                    <td>(+62) <?php echo '$notelp';?></td>
+                                    <td>(+62) <?php echo $notelp;?></td>
                                 </tr>
                                 <tr>
                                     <td>Email</td>
                                     <td>:</td>
-                                    <td><?php echo '$email';?></td>
+                                    <td><?php echo $email;?></td>
                                 </tr>
                                 <tr>
                                     <td>Username</td>
                                     <td>:</td>
-                                    <td><?php echo '$userid';?></td>
+                                    <td><?php echo $userid;?></td>
                                 </tr>
                                 <tr>
                                     <td>Password</td>
                                     <td>:</td>
-                                    <td><?php echo '$userpswd';?></td>
+                                    <td><?php echo $userpswd;?></td>
                                 </tr>
                             </tbody>  
                         </table>
