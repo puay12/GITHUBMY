@@ -8,41 +8,39 @@
             header('location:login.php');
             exit;
         }
-        else{
-            $id_login = $_GET['id_login'];
-            $userid = $_SESSION['userid'];
-            $userpswd = $_SESSION['userpswd'];
-            $sql_profil  = "SELECT *
-                            FROM login_user
-                            WHERE userid = '$userid' AND userpswd = '$userpswd'";
-            $sql_datmhs  = "SELECT *
-                            FROM login_user";
-            $result_profil = mysqli_query($konek, $sql_profil);
-            $result_datmhs = mysqli_query($konek, $sql_datmhs);
-            $no = 1;
-            if($result_profil){
-                if(mysqli_num_rows($result_profil) > 0){
-                    while($kolom = mysqli_fetch_array($result_profil)){
-                        $id_login_admin = $kolom['id_login'];
-                        $nrp_admin = $kolom['nrp'];
-                        $nama_admin = $kolom['nama'];
-                        $tmpt_lahir_admin = $kolom['tmpt_lahir'];
-                        $tgl_lahir_admin = $kolom['tgl_lahir'];
-                        $notelp_admin = $kolom['notelp'];
-                        $alamat_admin = $kolom['alamat'];
-                        $userid = $kolom['userid'];
-                        $userpswd = $kolom['userpswd'];
-                        $email_admin = $kolom['email'];
-                    }
-                }
-                else{
-                    echo "Data tidak ada atau data = 0";
-                }
-            }
-            else{
-                echo "Error : " . mysqli_error($konek) . "<br/>";
+    }
+    $id_login = $_GET['id_login'];
+    $userid = $_SESSION['userid'];
+    $userpswd = $_SESSION['userpswd'];
+    $sql_profil  = "SELECT *
+                    FROM login_user
+                    WHERE userid = '$userid' AND userpswd = '$userpswd'";
+    $sql_datmhs  = "SELECT *
+                    FROM login_user";
+    $result_profil = mysqli_query($konek, $sql_profil);
+    $result_datmhs = mysqli_query($konek, $sql_datmhs);
+    $no = 1;
+    if($result_profil){
+        if(mysqli_num_rows($result_profil) > 0){
+            while($kolom = mysqli_fetch_array($result_profil)){
+                $id_login_admin = $kolom['id_login'];
+                $nrp_admin = $kolom['nrp'];
+                $nama_admin = $kolom['nama'];
+                $tmpt_lahir_admin = $kolom['tmpt_lahir'];
+                $tgl_lahir_admin = $kolom['tgl_lahir'];
+                $notelp_admin = $kolom['notelp'];
+                $alamat_admin = $kolom['alamat'];
+                $userid = $kolom['userid'];
+                $userpswd = $kolom['userpswd'];
+                $email_admin = $kolom['email'];
             }
         }
+        else{
+            echo "Data tidak ada atau data = 0";
+        }
+    }
+    else{
+        echo "Error : " . mysqli_error($konek) . "<br/>";
     }
 ?>
 
