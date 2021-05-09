@@ -10,8 +10,8 @@
         }
         else{
             $id_login = $_GET['id_login'];
-            $userid = $_POST['userid'];
-            $userpswd = $_POST['userpswd'];
+            $userid = $_SESSION['userid'];
+            $userpswd = $_SESSION['userpswd'];
             $sql_profil  = "SELECT *
                             FROM login_user
                             WHERE userid = '$userid' AND userpswd = '$userpswd'";
