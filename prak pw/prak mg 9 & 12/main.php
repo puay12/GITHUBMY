@@ -211,7 +211,7 @@
                             <h6>Tugas 5</h6>
                             <p class="detail">Laporan minggu ke-5</p>
                             <div class="container-fluid box-status">
-                                <span class="status selesai">Belum Selesai</span>
+                                <span class="status selesai">Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
                             <button class="btn btn-info lihat">Lihat Detail</button>
@@ -222,7 +222,7 @@
                             <h6>Tugas 4</h6>
                             <p class="detail">Laporan minggu ke-4</p>
                             <div class="container-fluid box-status">
-                                <span class="status selesai">Belum Selesai</span>
+                                <span class="status selesai">Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
                             <button class="btn btn-info lihat">Lihat Detail</button>
@@ -236,7 +236,7 @@
                             <h6>Tugas 3</h6>
                             <p class="detail">Laporan minggu ke-3</p>
                             <div class="container-fluid box-status">
-                                <span class="status selesai">Belum Selesai</span>
+                                <span class="status selesai">Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
                             <button class="btn btn-info lihat">Lihat Detail</button>
@@ -247,7 +247,7 @@
                             <h6>Tugas 2</h6>
                             <p class="detail">Laporan minggu ke-2</p>
                             <div class="container-fluid box-status">
-                                <span class="status selesai">Belum Selesai</span>
+                                <span class="status selesai">Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
                             <button class="btn btn-info lihat">Lihat Detail</button>
@@ -258,7 +258,7 @@
                             <h6>Tugas 1</h6>
                             <p class="detail">Laporan minggu ke-1</p>
                             <div class="container-fluid box-status">
-                                <span class="status selesai">Belum Selesai</span>
+                                <span class="status selesai">Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
                             <button class="btn btn-info lihat">Lihat Detail</button>
