@@ -266,6 +266,11 @@
                     </div>
                 </div>
             </div>
+            <!-- LIHAT DETAIL TUGAS -->
+            <div class="container-fluid content-lhatugas hides">
+                <h3>HALO LIHATUGAS</h3>
+                <button class="btn btn-info kembali-datugas">Kembali ke Daftar Tugas</button>
+            </div>
         </div>
     </div>
 </body>
