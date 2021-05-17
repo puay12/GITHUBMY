@@ -193,6 +193,7 @@
             </div>
             <!-- DATA TUGAS -->
             <div class="container-fluid content-datugas hides">
+                <!-- BARIS 1 -->
                 <div class="row">
                     <div class="col-md-4 card">
                         <div class="container card1">
@@ -205,7 +206,27 @@
                         </div>
                     </div>
                     <div class="col-md-4 card">
-                        <div class="container card3"></div>
+                        <div class="container card3">
+                            <h5 class="text-center">HALO</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- BARIS 2 -->
+                <div class="row">
+                    <div class="col-md-4 card">
+                        <div class="container card1">
+                            <h5 class="text-center">HALO</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card">
+                        <div class="container card2">
+                            <h5 class="text-center">HALO</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card">
+                        <div class="container card3">
+                            <h5 class="text-center">HALO</h5>
+                        </div>
                     </div>
                 </div>
             </div>
