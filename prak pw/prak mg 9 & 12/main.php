@@ -194,9 +194,15 @@
             <!-- DATA TUGAS -->
             <div class="container-fluid content-datugas hides">
                 <div class="row">
-                    <div class="col-md-4 card card1"></div>
-                    <div class="col-md-4 card card2"></div>
-                    <div class="col-md-4 card card3"></div>
+                    <div class="col-md-4 card">
+                        <div class="container card1"></div>
+                    </div>
+                    <div class="col-md-4 card">
+                        <div class="container card2"></div>
+                    </div>
+                    <div class="col-md-4 card">
+                        <div class="container card3"></div>
+                    </div>
                 </div>
             </div>
         </div>
