@@ -197,7 +197,7 @@
                 <div class="row">
                     <div class="col-md-4 card">
                         <div class="container card1">
-                            <h4>Tugas 6</h4>
+                            <h6>Tugas 6</h6>
                             <p class="detail">Laporan minggu ke-6</p>
                             <div class="container-fluid box-status">
                                 <span class="status belum-selesai">Belum Selesai</span>
@@ -207,7 +207,7 @@
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card2">
-                            <h4>Tugas 5</h4>
+                            <h6>Tugas 5</h6>
                             <p class="detail">Laporan minggu ke-5</p>
                             <div class="container-fluid box-status">
                                 <span class="status selesai">Belum Selesai</span>
@@ -217,7 +217,7 @@
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card3">
-                            <h4>Tugas 4</h4>
+                            <h6>Tugas 4</h6>
                             <p class="detail">Laporan minggu ke-4</p>
                             <div class="container-fluid box-status">
                                 <span class="status selesai">Belum Selesai</span>
@@ -230,7 +230,7 @@
                 <div class="row">
                     <div class="col-md-4 card">
                         <div class="container card1">
-                            <h4>Tugas 3</h4>
+                            <h6>Tugas 3</h6>
                             <p class="detail">Laporan minggu ke-3</p>
                             <div class="container-fluid box-status">
                                 <span class="status selesai">Belum Selesai</span>
@@ -240,7 +240,7 @@
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card2">
-                            <h4>Tugas 2</h4>
+                            <h6>Tugas 2</h6>
                             <p class="detail">Laporan minggu ke-2</p>
                             <div class="container-fluid box-status">
                                 <span class="status selesai">Belum Selesai</span>
@@ -250,7 +250,7 @@
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card3">
-                            <h4>Tugas 1</h4>
+                            <h6>Tugas 1</h6>
                             <p class="detail">Laporan minggu ke-1</p>
                             <div class="container-fluid box-status">
                                 <span class="status selesai">Belum Selesai</span>

@@ -394,11 +394,18 @@ p.petunjuk{
 .home-sec .content-datugas span.status{
     color: #F5FAFF;
     font-weight: 500;
+    padding: 3px 3px;
+    font-size: 10px;
+}
+
+.home-sec .content-datugas span.deadline{
+    font-size: 10px;
 }
 
 .home-sec .content-datugas .box-status{
-    margin-top: 10px;
+    margin-bottom: 7px;
     background: transparent;
+    padding: 0 0;
 }
 
 .show{
