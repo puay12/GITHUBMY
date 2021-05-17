@@ -386,6 +386,10 @@ p.petunjuk{
     border: solid 1px #9b5de5;
 }
 
+.home-sec .content-datugas .card h6{
+    font-size: 14px;
+}
+
 .home-sec .content-datugas p.detail{
     font-size: 12px;
     color: darkgray;
@@ -393,17 +397,19 @@ p.petunjuk{
 
 .home-sec .content-datugas span.status{
     color: #F5FAFF;
-    font-weight: 500;
-    padding: 3px 3px;
+    font-weight: 600;
+    padding: 5px 5px;
     font-size: 10px;
+    border-radius: 3px;
 }
 
 .home-sec .content-datugas span.deadline{
     font-size: 10px;
+    font-weight: 600;
 }
 
 .home-sec .content-datugas .box-status{
-    margin-bottom: 7px;
+    margin-bottom: 3px;
     background: transparent;
     padding: 0 0;
 }
