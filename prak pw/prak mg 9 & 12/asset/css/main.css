@@ -421,7 +421,7 @@ p.petunjuk{
 .home-sec .content-datugas .box-status{
     margin-bottom: 3px;
     background: transparent;
-    align-items: left;
+    align-content: left;
 }
 
 .home-sec .content-datugas button.lihat{
