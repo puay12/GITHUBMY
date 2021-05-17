@@ -432,8 +432,8 @@ p.petunjuk{
     border-radius: 5x;
     position: relative;
     left: 50%;
-    top: 3%;
-    transform: translate(-50%, -3%);
+    transform: translateX(-50%);
+    margin-top: 32px;
 }
 
 .home-sec .content-datugas button.lihat:hover{
