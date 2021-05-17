@@ -194,7 +194,7 @@ img{
 }
 
 .home-sec .sidebar{
-    background: #fca311;
+    background: #001833;
     color: #FFF;
     padding-top: 25px;
     padding-left: 12px;
@@ -229,7 +229,7 @@ img{
 }
 
 .home-sec li a.active{
-    background: #FFF;
+    background: #fca311;
     color: #001833;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -237,7 +237,7 @@ img{
 }
 
 .home-sec li a.active:hover{
-    color: #001833;
+    color: #fca311;
     text-decoration: none;
 }
 
@@ -421,8 +421,7 @@ p.petunjuk{
 .home-sec .content-datugas .box-status{
     margin-bottom: 3px;
     background: transparent;
-    justify-items: flex-start;
-    align-items: left;
+    border: 1px solid #000;
 }
 
 .home-sec .content-datugas button.lihat{
