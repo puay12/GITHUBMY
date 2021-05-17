@@ -393,12 +393,12 @@ p.petunjuk{
 .home-sec .content-datugas .card3{
     background: transparent;
     border: solid 1px #9b5de5;
-}
+}*/
 
 .home-sec .content-datugas .card h6{
     font-size: 16px;
     font-weight: bold;
-} */
+} 
 
 .home-sec .content-datugas p.detail{
     font-size: 12px;
@@ -421,7 +421,8 @@ p.petunjuk{
 .home-sec .content-datugas .box-status{
     margin-bottom: 3px;
     background: transparent;
-    align-content: left;
+    justify-items: flex-start;
+    align-items: left;
 }
 
 .home-sec .content-datugas button.lihat{
