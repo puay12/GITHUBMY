@@ -204,6 +204,7 @@
                                 <span class="deadline green">23 Juni 2021, 23.59</span>
                             </div>
                         </div>
+                        <button class="btn btn-primary lihat">Lihat Detail</button>
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card2">
@@ -213,6 +214,7 @@
                                 <span class="status selesai">Belum Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
+                            <button class="btn btn-primary lihat">Lihat Detail</button>
                         </div>
                     </div>
                     <div class="col-md-4 card">
@@ -223,6 +225,7 @@
                                 <span class="status selesai">Belum Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
+                            <button class="btn btn-primary lihat">Lihat Detail</button>
                         </div>
                     </div>
                 </div>
@@ -236,6 +239,7 @@
                                 <span class="status selesai">Belum Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
+                            <button class="btn btn-primary lihat">Lihat Detail</button>
                         </div>
                     </div>
                     <div class="col-md-4 card">
@@ -246,6 +250,7 @@
                                 <span class="status selesai">Belum Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
+                            <button class="btn btn-primary lihat">Lihat Detail</button>
                         </div>
                     </div>
                     <div class="col-md-4 card">
@@ -256,6 +261,7 @@
                                 <span class="status selesai">Belum Selesai</span>
                                 <span class="deadline blue">23 Juni 2021, 23.59</span>
                             </div>
+                            <button class="btn btn-primary lihat">Lihat Detail</button>
                         </div>
                     </div>
                 </div>

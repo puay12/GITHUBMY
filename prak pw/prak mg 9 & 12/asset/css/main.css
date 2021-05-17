@@ -360,6 +360,11 @@ p.petunjuk{
     padding: 12px 12px;
     background: transparent;
     border: none;
+    position: relative;
+}
+
+.home-sec .content-datugas .card:hover{
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
 }
 
 .home-sec .content-datugas .card1,
@@ -387,7 +392,8 @@ p.petunjuk{
 }
 
 .home-sec .content-datugas .card h6{
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .home-sec .content-datugas p.detail{
@@ -411,7 +417,23 @@ p.petunjuk{
 .home-sec .content-datugas .box-status{
     margin-bottom: 3px;
     background: transparent;
-    padding: 0 0;
+}
+
+.home-sec .content-datugas button.lihat{
+    padding: .5rem 1.3rem;
+    color: #F5FAFF;
+    font-weight: 600;
+    transition: ease .3s;
+    border-radius: 8px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5px;
+}
+
+.home-sec .content-datugas button.lihat:hover{
+    background: transparent;
+    border: solid 1px #fca311;
 }
 
 .show{
