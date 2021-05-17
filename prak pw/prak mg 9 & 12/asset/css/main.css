@@ -363,10 +363,6 @@ p.petunjuk{
     position: relative;
 }
 
-.home-sec .content-datugas .card:hover{
-    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
-}
-
 .home-sec .content-datugas .card1,
 .home-sec .content-datugas .card2,
 .home-sec .content-datugas .card3{
@@ -374,9 +370,17 @@ p.petunjuk{
     border-radius: 11px;
     height: 180px;
     color: #001833;
+    background: transparent;
+    border : solid 1px grey;
 }
 
-.home-sec .content-datugas .card1{
+.home-sec .content-datugas .card1:hover,
+.home-sec .content-datugas .card2:hover,
+.home-sec .content-datugas .card3:hover{
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* .home-sec .content-datugas .card1{
     background: transparent;
     border : solid 1px #00bbf9;
 }
@@ -394,7 +398,7 @@ p.petunjuk{
 .home-sec .content-datugas .card h6{
     font-size: 16px;
     font-weight: bold;
-}
+} */
 
 .home-sec .content-datugas p.detail{
     font-size: 12px;
