@@ -237,12 +237,12 @@ img{
 }
 
 .home-sec li a.active:hover{
-    color: #fca311;
+    color: #001833;
     text-decoration: none;
 }
 
 .home-sec li a:hover{
-    color: #001833;
+    color: #fca311;
     text-decoration: none;
 }
 
