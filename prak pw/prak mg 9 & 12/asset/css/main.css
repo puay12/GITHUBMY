@@ -432,14 +432,12 @@ p.petunjuk{
     border-radius: 5x;
     position: relative;
     left: 50%;
-    bottom: 1%;
-    transform: translate(-50%, -1%);
+    top: 3%;
+    transform: translate(-50%, -3%);
 }
 
 .home-sec .content-datugas button.lihat:hover{
-    background: transparent;
-    border: solid 1px #00bbf9;
-    color: #000;
+    background: #008270;
 }
 
 .show{
