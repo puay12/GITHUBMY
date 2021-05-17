@@ -32,3 +32,8 @@ $('.lihat').on('click', function() {
     $('.content-datugas').removeClass('show').addClass('hides');
     $('.content-lihatugas').removeClass('hides').addClass('show');
 });
+
+$('.kembali-datugas').on('click', function() {
+    $('.content-lihatugas').removeClass('show').addClass('hides');
+    $('.content-datugas').removeClass('hides').addClass('show');
+});
