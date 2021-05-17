@@ -362,11 +362,26 @@ p.petunjuk{
     border: none;
 }
 
+.home-sec .content-datugas .card1,
+.home-sec .content-datugas .card2,
+.home-sec .content-datugas .card3{
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
 .home-sec .content-datugas .card1{
     background: #004a9e;
-    padding: 20px 20px;
     color: #F5FAFF;
-    border-radius: 10px;
+}
+
+.home-sec .content-datugas .card2{
+    background: salmon;
+    color: #F5FAFF;
+}
+
+.home-sec .content-datugas .card3{
+    background: green;
+    color: #F5FAFF;
 }
 
 .show{

@@ -200,7 +200,9 @@
                         </div>
                     </div>
                     <div class="col-md-4 card">
-                        <div class="container card2"></div>
+                        <div class="container card2">
+                            <h5 class="text-center">HALO</h5>
+                        </div>
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card3"></div>
