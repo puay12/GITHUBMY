@@ -424,15 +424,16 @@ p.petunjuk{
 }
 
 .home-sec .content-datugas button.lihat{
-    padding: .3rem .5rem;
+    padding: .2rem .4rem;
     color: #F5FAFF;
-    font-weight: 550;
+    font-weight: 600;
+    font-size: 12px;
     transition: ease .3s;
     border-radius: 5x;
     position: relative;
     left: 50%;
-    bottom: 2%;
-    transform: translate(-50%, -2%);
+    bottom: 1%;
+    transform: translate(-50%, -1%);
 }
 
 .home-sec .content-datugas button.lihat:hover{
