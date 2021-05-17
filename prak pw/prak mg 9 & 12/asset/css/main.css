@@ -371,7 +371,7 @@ p.petunjuk{
     height: 180px;
     color: #001833;
     background: transparent;
-    border : solid 1px grey;
+    border : solid 1px lightgray;
 }
 
 .home-sec .content-datugas .card1:hover,
@@ -424,7 +424,7 @@ p.petunjuk{
 }
 
 .home-sec .content-datugas button.lihat{
-    padding: .5rem 1.3rem;
+    padding: .3rem .5rem;
     color: #F5FAFF;
     font-weight: 600;
     transition: ease .3s;
@@ -432,7 +432,7 @@ p.petunjuk{
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 5px;
+    margin-bottom: 1px;
 }
 
 .home-sec .content-datugas button.lihat:hover{
