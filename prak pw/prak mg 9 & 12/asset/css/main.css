@@ -357,13 +357,15 @@ p.petunjuk{
 }
 
 .home-sec .content-datugas .card{
-    padding: 20px 20px;
-    color: #F5FAFF;
+    padding: 12px 12px;
+    background: transparent;
 }
 
 .home-sec .content-datugas .card1{
     background: #001833;
-    padding: 12px 12px;
+    padding: 20px 20px;
+    color: #F5FAFF;
+    border-radius: 8px;
 }
 
 .show{
