@@ -411,18 +411,17 @@ p.petunjuk{
     padding: 5px 5px;
     font-size: 10px;
     border-radius: 3px;
-    margin-left: 0;
 }
 
 .home-sec .content-datugas span.deadline{
     font-size: 10px;
     font-weight: 600;
-    margin-right: 0;
 }
 
 .home-sec .content-datugas .box-status{
     margin-bottom: 3px;
     background: transparent;
+    align-items: left;
 }
 
 .home-sec .content-datugas button.lihat{
