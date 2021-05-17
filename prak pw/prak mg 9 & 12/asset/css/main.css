@@ -367,22 +367,38 @@ p.petunjuk{
 .home-sec .content-datugas .card3{
     padding: 20px 20px;
     border-radius: 11px;
-    height: 170px;
+    height: 180px;
+    color: #001833;
 }
 
 .home-sec .content-datugas .card1{
-    background: #00bbf9;
-    color: #F5FAFF;
+    background: transparent;
+    border : solid 1px #00bbf9;
 }
 
 .home-sec .content-datugas .card2{
-    background: #00f5d4;
-    color: #F5FAFF;
+    background: transparent;
+    border: solid 1px #00f5d4;
 }
 
 .home-sec .content-datugas .card3{
-    background: #9b5de5;
+    background: transparent;
+    border: solid 1px #9b5de5;
+}
+
+.home-sec .content-datugas p.detail{
+    font-size: 12px;
+    color: darkgray;
+}
+
+.home-sec .content-datugas span.status{
     color: #F5FAFF;
+    font-weight: 500;
+}
+
+.home-sec .content-datugas .box-status{
+    margin-top: 10px;
+    background: transparent;
 }
 
 .show{
@@ -391,4 +407,20 @@ p.petunjuk{
 
 .hides{
     display: none;
+}
+
+.belum-selesai{
+    background: #e72e2e;
+}
+
+.selesai{
+    background: #01e12e;
+}
+
+.green{
+    color: #01e12e;
+}
+
+.blue{
+    color: #00bbf9;
 }

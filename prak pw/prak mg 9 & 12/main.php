@@ -197,17 +197,32 @@
                 <div class="row">
                     <div class="col-md-4 card">
                         <div class="container card1">
-                            <h5 class="text-center">HALO</h5>
+                            <h4>Tugas 6</h4>
+                            <p class="detail">Laporan minggu ke-6</p>
+                            <div class="container-fluid box-status">
+                                <span class="status belum-selesai">Belum Selesai</span>
+                                <span class="deadline green">23 Juni 2021, 23.59</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card2">
-                            <h5 class="text-center">HALO</h5>
+                            <h4>Tugas 5</h4>
+                            <p class="detail">Laporan minggu ke-5</p>
+                            <div class="container-fluid box-status">
+                                <span class="status selesai">Belum Selesai</span>
+                                <span class="deadline blue">23 Juni 2021, 23.59</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card3">
-                            <h5 class="text-center">HALO</h5>
+                            <h4>Tugas 4</h4>
+                            <p class="detail">Laporan minggu ke-4</p>
+                            <div class="container-fluid box-status">
+                                <span class="status selesai">Belum Selesai</span>
+                                <span class="deadline blue">23 Juni 2021, 23.59</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -215,17 +230,32 @@
                 <div class="row">
                     <div class="col-md-4 card">
                         <div class="container card1">
-                            <h5 class="text-center">HALO</h5>
+                            <h4>Tugas 3</h4>
+                            <p class="detail">Laporan minggu ke-3</p>
+                            <div class="container-fluid box-status">
+                                <span class="status selesai">Belum Selesai</span>
+                                <span class="deadline blue">23 Juni 2021, 23.59</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card2">
-                            <h5 class="text-center">HALO</h5>
+                            <h4>Tugas 2</h4>
+                            <p class="detail">Laporan minggu ke-2</p>
+                            <div class="container-fluid box-status">
+                                <span class="status selesai">Belum Selesai</span>
+                                <span class="deadline blue">23 Juni 2021, 23.59</span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4 card">
                         <div class="container card3">
-                            <h5 class="text-center">HALO</h5>
+                            <h4>Tugas 1</h4>
+                            <p class="detail">Laporan minggu ke-1</p>
+                            <div class="container-fluid box-status">
+                                <span class="status selesai">Belum Selesai</span>
+                                <span class="deadline blue">23 Juni 2021, 23.59</span>
+                            </div>
                         </div>
                     </div>
                 </div>
