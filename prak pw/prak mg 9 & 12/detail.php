@@ -128,7 +128,7 @@
                 <!-- petunjuk -->
                 <p class="petunjuk">Klik tombol di bawah ini untuk kembali ke halaman sebelumnya.</p>
                 <!-- button kembali -->
-                <a href="main.php">
+                <a href="data_mhs.php">
                     <button type="button" class="btn btn-main prev">Kembali</button>
                 </a>
             </div>
