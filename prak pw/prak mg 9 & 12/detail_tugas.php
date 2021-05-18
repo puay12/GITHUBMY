@@ -58,7 +58,9 @@
             <!-- LIHAT DETAIL TUGAS -->
             <div class="container-fluid content-lihatugas">
                 <h3>HALO LIHATUGAS</h3>
-                <button class="btn btn-info kembali-datugas">Kembali ke Daftar Tugas</button>
+                <a href="data_tugas.php">
+                    <button class="btn btn-info kembali-datugas">Kembali ke Daftar Tugas</button>
+                </a>
             </div>
         </div>
     </div>
