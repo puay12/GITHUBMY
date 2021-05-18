@@ -400,9 +400,7 @@ p.petunjuk{
 .home-sec .content-datugas span.deadline{
     font-size: 10px;
     font-weight: 600;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-top: 10px;
 }
 
 .home-sec .content-datugas .box-status{
