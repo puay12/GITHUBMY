@@ -15,11 +15,7 @@
     $sql_profil  = "SELECT *
                     FROM login_user
                     WHERE userid = '$userid' AND userpswd = '$userpswd'";
-    $sql_datmhs  = "SELECT *
-                    FROM login_user
-                    WHERE userid NOT LIKE '$userid'";
     $result_profil = mysqli_query($konek, $sql_profil);
-    $result_datmhs = mysqli_query($konek, $sql_datmhs);
     $no = 1;
     if($result_profil){
         if(mysqli_num_rows($result_profil) > 0){
@@ -66,15 +62,15 @@
             <div class="sidebar-menu container-fluid">
                 <ul>
                     <li id="prof">
-                        <a href="#" class="link1 active"><span class="fa fa-user-circle"></span>
+                        <a href="main.php" class="link1 active"><span class="fa fa-user-circle"></span>
                             <span class="list">Profil User</span></a>
                     </li>
                     <li id="datamhs">
-                        <a href="#" class="link2"><span class="fa fa-users"></span>
+                        <a href="data_mhs.php" class="link2"><span class="fa fa-users"></span>
                             <span class="list">Data Mahasiswa</span></a>
                     </li>
                     <li id="datatugas">
-                        <a href="#" class="link3"><span class="fa fa-book"></span>
+                        <a href="data_tugas.php" class="link3"><span class="fa fa-book"></span>
                             <span class="list">Data Tugas</span></a>
                     </li>
                 </ul>
@@ -144,132 +140,6 @@
                         <img src="asset/img/me.jpg" alt="photo">
                     </div>
                 </div>
-            </div>
-            <!-- DATA MAHASISWA --------->
-            <div class="container-fluid content-datmhs hides">
-                <div class="row">
-                    <div class="col">
-                        <table class="table table-hover">
-                            <thead>
-                                <tr>
-                                    <th scope="col">No</th>
-                                    <th scope="col">NRP</th>
-                                    <th scope="col">Nama</th>
-                                    <th scope="col">Detail</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php 
-                                    if($result_datmhs){
-                                        if(mysqli_num_rows($result_datmhs) > 0){
-                                            while($kolom = mysqli_fetch_array($result_datmhs)){
-                                                $id_login = $kolom['id_login'];
-                                                $nrp = $kolom['nrp'];
-                                                $nama = $kolom['nama'];
-                                                echo "<tr>
-                                                        <th scope='row'>$no</th>
-                                                        <td>$nrp</td>
-                                                        <td>$nama</td>
-                                                        <td><a href='detail.php?id_login=$id_login'>Lihat</a></td>
-                                                    </tr>";
-                                                $no++;
-                                            }
-                                        } 
-                                        else{
-                                            echo "<tr>
-                                                    <th>Data tidak ada atau data = 0</th>
-                                                </tr>";
-                                        }
-                                    }
-                                    else{
-                                        echo "Error : " . mysqli_error($konek) . "<br/>";
-                                    }
-                                    include 'config/closedb.php';
-                                ?>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <!-- DATA TUGAS -->
-            <div class="container-fluid content-datugas hides">
-                <!-- BARIS 1 -->
-                <div class="row">
-                    <div class="col-md-4 card">
-                        <div class="container card1">
-                            <h6>Tugas 6</h6>
-                            <p class="detail">Laporan minggu ke-6</p>
-                            <div class="container-fluid box-status">
-                                <span class="status belum-selesai">Belum Selesai</span>
-                                <span class="deadline green">23 Juni 2021, 23.59</span>
-                            </div>
-                            <button class="btn btn-info lihat">Lihat Detail</button>
-                        </div>
-                    </div>
-                    <div class="col-md-4 card">
-                        <div class="container card2">
-                            <h6>Tugas 5</h6>
-                            <p class="detail">Laporan minggu ke-5</p>
-                            <div class="container-fluid box-status">
-                                <span class="status selesai">Selesai</span>
-                                <span class="deadline blue">23 Juni 2021, 23.59</span>
-                            </div>
-                            <button class="btn btn-info lihat">Lihat Detail</button>
-                        </div>
-                    </div>
-                    <div class="col-md-4 card">
-                        <div class="container card3">
-                            <h6>Tugas 4</h6>
-                            <p class="detail">Laporan minggu ke-4</p>
-                            <div class="container-fluid box-status">
-                                <span class="status selesai">Selesai</span>
-                                <span class="deadline blue">23 Juni 2021, 23.59</span>
-                            </div>
-                            <button class="btn btn-info lihat">Lihat Detail</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- BARIS 2 -->
-                <div class="row">
-                    <div class="col-md-4 card">
-                        <div class="container card1">
-                            <h6>Tugas 3</h6>
-                            <p class="detail">Laporan minggu ke-3</p>
-                            <div class="container-fluid box-status">
-                                <span class="status selesai">Selesai</span>
-                                <span class="deadline blue">23 Juni 2021, 23.59</span>
-                            </div>
-                            <button class="btn btn-info lihat">Lihat Detail</button>
-                        </div>
-                    </div>
-                    <div class="col-md-4 card">
-                        <div class="container card2">
-                            <h6>Tugas 2</h6>
-                            <p class="detail">Laporan minggu ke-2</p>
-                            <div class="container-fluid box-status">
-                                <span class="status selesai">Selesai</span>
-                                <span class="deadline blue">23 Juni 2021, 23.59</span>
-                            </div>
-                            <button class="btn btn-info lihat">Lihat Detail</button>
-                        </div>
-                    </div>
-                    <div class="col-md-4 card">
-                        <div class="container card3">
-                            <h6>Tugas 1</h6>
-                            <p class="detail">Laporan minggu ke-1</p>
-                            <div class="container-fluid box-status">
-                                <span class="status selesai">Selesai</span>
-                                <span class="deadline blue">23 Juni 2021, 23.59</span>
-                            </div>
-                            <button class="btn btn-info lihat">Lihat Detail</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- LIHAT DETAIL TUGAS -->
-            <div class="container-fluid content-lihatugas hides">
-                <h3>HALO LIHATUGAS</h3>
-                <button class="btn btn-info kembali-datugas">Kembali ke Daftar Tugas</button>
             </div>
         </div>
     </div>

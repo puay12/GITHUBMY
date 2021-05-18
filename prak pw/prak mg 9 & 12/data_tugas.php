@@ -35,15 +35,15 @@
             <div class="sidebar-menu container-fluid">
                 <ul>
                     <li id="prof">
-                        <a href="baru/main.php" class="link1"><span class="fa fa-user-circle"></span>
+                        <a href="main.php" class="link1"><span class="fa fa-user-circle"></span>
                             <span class="list">Profil User</span></a>
                     </li>
                     <li id="datamhs">
-                        <a href="baru/data_mhs.php" class="link2"><span class="fa fa-users"></span>
+                        <a href="data_mhs.php" class="link2"><span class="fa fa-users"></span>
                             <span class="list">Data Mahasiswa</span></a>
                     </li>
                     <li id="datatugas">
-                        <a href="baru/data_tugas.php" class="link3 active"><span class="fa fa-book"></span>
+                        <a href="data_tugas.php" class="link3 active"><span class="fa fa-book"></span>
                             <span class="list">Data Tugas</span></a>
                     </li>
                 </ul>
