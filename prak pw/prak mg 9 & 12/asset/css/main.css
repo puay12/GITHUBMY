@@ -400,10 +400,10 @@ p.petunjuk{
 .home-sec .content-datugas span.deadline{
     font-size: 10px;
     font-weight: 600;
-    margin-left: 32px;
 }
 
 .home-sec .content-datugas .box-status{
+    justify-content: space-between;
     background: transparent;
     padding: 0 0;
 }
