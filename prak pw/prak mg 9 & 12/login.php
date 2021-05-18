@@ -15,7 +15,7 @@ if(isset($_POST['userid']) && isset($_POST['userpswd'])){
         $_SESSION['login'] = true;
         $_SESSION['userid'] = $userid;
         $_SESSION['userpswd'] = $userpswd;
-        header('location:main.php');
+        header('location:baru/main.php');
         exit;
     }
     else{
