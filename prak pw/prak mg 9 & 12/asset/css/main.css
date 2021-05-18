@@ -403,6 +403,7 @@ p.petunjuk{
 }
 
 .home-sec .content-datugas .box-status{
+    display: flex;
     justify-content: space-between;
     background: transparent;
     padding: 0 0;
