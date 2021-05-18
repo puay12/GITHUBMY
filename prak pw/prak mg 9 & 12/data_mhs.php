@@ -61,7 +61,7 @@
                 <a href="logout.php">Logout</a>
             </header>
             <!-- DATA MAHASISWA --------->
-            <div class="container-fluid content-datmhs hides">
+            <div class="container-fluid content-datmhs">
                 <div class="row">
                     <div class="col">
                         <table class="table table-hover">

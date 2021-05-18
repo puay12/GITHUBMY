@@ -56,7 +56,7 @@
                 <a href="logout.php">Logout</a>
             </header>
             <!-- LIHAT DETAIL TUGAS -->
-            <div class="container-fluid content-lihatugas hides">
+            <div class="container-fluid content-lihatugas">
                 <h3>HALO LIHATUGAS</h3>
                 <button class="btn btn-info kembali-datugas">Kembali ke Daftar Tugas</button>
             </div>

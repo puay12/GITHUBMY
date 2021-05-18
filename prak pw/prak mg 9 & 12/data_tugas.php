@@ -56,7 +56,7 @@
                 <a href="logout.php">Logout</a>
             </header>
             <!-- DATA TUGAS -->
-            <div class="container-fluid content-datugas hides">
+            <div class="container-fluid content-datugas">
                 <!-- BARIS 1 -->
                 <div class="row">
                     <div class="col-md-4 card">

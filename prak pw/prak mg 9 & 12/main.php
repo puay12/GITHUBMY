@@ -83,7 +83,7 @@
                 <a href="logout.php">Logout</a>
             </header>
             <!-- PROFIL USER--------- -->
-            <div class="container-fluid content-profil show">
+            <div class="container-fluid content-profil">
                 <div class="row">
                     <div class="col-md-8">
                         <table class="table table-striped">
