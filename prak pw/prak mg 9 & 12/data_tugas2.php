@@ -17,10 +17,10 @@
     // $namaFile = $_POST['namaFile'];
     // $sizeFile = $_POST['sizeFile'];
     // $descript = $_POST['descript'];
-    $sql =  SELECT *
-            FROM data_tugas
-            WHERE idFile = $id_file;
-    $result = mysqli_query($konek, $sql);
+    // $sql =  SELECT *
+    //         FROM data_tugas
+    //         WHERE idFile = $id_file;
+    // $result = mysqli_query($konek, $sql);
 ?>
 
 <!DOCTYPE html>
