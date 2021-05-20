@@ -369,7 +369,7 @@ p.petunjuk{
 }
 
 .home-sec .content-datugas2 .desc{
-    margin-top: 32px;
+    margin-top: 24px;
 }
 
 .home-sec .content-datugas2 textarea{
@@ -383,7 +383,7 @@ p.petunjuk{
     border-radius: 5px;
     transition: ease 0.3s;
     margin-top: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
