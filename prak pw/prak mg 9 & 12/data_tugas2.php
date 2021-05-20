@@ -85,6 +85,10 @@
                     <tbody>
                         <tr>
                             <td>HALO</td>
+                            <td>HALO</td>
+                            <td>HALO</td>
+                            <td>HALO</td>
+                            <td>HALO</td>
                         </tr>
                     </tbody>
                 </table>
