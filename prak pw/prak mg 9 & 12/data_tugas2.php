@@ -9,6 +9,9 @@
             exit;
         }
     }
+    $id_login = $_GET['id_login'];
+    $userid = $_SESSION['userid'];
+    $userpswd = $_SESSION['userpswd'];
     $no = 1;
     $idFile = $_GET['idFile'];
     // $namaFile = $_POST['namaFile'];
@@ -18,9 +21,6 @@
             FROM data_tugas
             WHERE idFile = $id_file;
     $result = mysqli_query($konek, $sql);
-    // $id_login = $_GET['id_login'];
-    // $userid = $_SESSION['userid'];
-    // $userpswd = $_SESSION['userpswd'];
 
 ?>
 
