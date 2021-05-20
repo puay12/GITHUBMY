@@ -12,6 +12,7 @@
     $id_login = $_GET['id_login'];
     $userid = $_SESSION['userid'];
     $userpswd = $_SESSION['userpswd'];
+
 ?>
 
 <!DOCTYPE html>
@@ -55,19 +56,34 @@
                 <p>Selamat Datang di Admin</p>
                 <a href="logout.php">Logout</a>
             </header>
-            <!-- LIHAT DETAIL TUGAS -->
-            <div class="container-fluid content-lihatugas">
-                <h3>HALO LIHATUGAS</h3>
-                <a href="data_tugas.php">
-                    <button class="btn btn-info kembali-datugas">Kembali ke Daftar Tugas</button>
-                </a>
+            <!-- DATA TUGAS -->
+            <div class="container-fluid content-datugas">
+                <!-- UPLOAD TUGAS -->
+                <h6>Upload Tugas</h6>
+                <form action="upload_tugas.php" method="POST" enctype="multipart/form-data">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="file_tugas" name="file_tugas" required>
+                        <label class="custom-file-label" for="file_tugas">Pilih sebuah file</label>
+                        <small id="ktm-file">Max file 5MB</small>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="desc" id="desc" rows="5" class="form-control" placeholder="Maks 250 karakter"></textarea>
+                    </div>
+                </form>
+                
+                <!-- TABEL TUGAS DAN DOWNLOAD -->
+                <table class="table table-hover">
+                    <thead>
+                        <td>No</td>
+                        <td>Nama File</td>
+                        <td>Ukuran File</td>
+                        <td>Deskripsi</td>
+                        <td>Download File</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HALO</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    </div>
-</body>
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- <script src="asset/js/main.js"></script> -->
-
-</html>

@@ -48,7 +48,7 @@
                             <span class="list">Data Mahasiswa</span></a>
                     </li>
                     <li id="datatugas">
-                        <a href="data_tugas.php" class="link3"><span class="fa fa-book"></span>
+                        <a href="data_tugas2.php" class="link3"><span class="fa fa-book"></span>
                             <span class="list">Data Tugas</span></a>
                     </li>
                 </ul>
