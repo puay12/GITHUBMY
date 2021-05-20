@@ -18,8 +18,7 @@
     // $sizeFile = $_POST['sizeFile'];
     // $descript = $_POST['descript'];
     $sql =  "SELECT *
-            FROM data_tugas
-            WHERE idFile = $idFile";
+            FROM data_tugas;
     $result = mysqli_query($konek, $sql);
 ?>
 
