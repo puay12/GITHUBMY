@@ -19,7 +19,7 @@
     // $descript = $_POST['descript'];
     $sql =  "SELECT *
             FROM data_tugas
-            WHERE idFile = $id_file";
+            WHERE idFile = $idFile";
     $result = mysqli_query($konek, $sql);
 ?>
 
