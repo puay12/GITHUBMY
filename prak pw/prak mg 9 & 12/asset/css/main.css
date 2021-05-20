@@ -373,9 +373,34 @@ p.petunjuk{
 }
 
 .home-sec .content-datugas2 textarea{
-    margin-bottom: 32px;
     color: #001833;
     margin-top: 12px;
+}
+
+.home-sec .content-datugas2 button{
+    padding: .3rem 1.0rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: ease 0.3s;
+    margin-top: 24px;
+    margin-bottom: 32px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-sec .content-datugas2 button .fa-send{
+    margin-right: 12px;
+}
+
+.home-sec .content-datugas2 button:hover .fa-send::before{
+    margin-right: 12px;
+    transition: ease 0.3s;
+}
+
+.home-sec .content-datugas2 button:hover .fa-send::after{
+    margin-right: 24px;
+    transition: ease 0.3s;
 }
 
 .home-sec .content-datugas2 table{
