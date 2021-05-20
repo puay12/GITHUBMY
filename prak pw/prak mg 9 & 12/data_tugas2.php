@@ -57,22 +57,24 @@
                 <a href="logout.php">Logout</a>
             </header>
             <!-- DATA TUGAS -->
-            <div class="container-fluid content-datugas">
+            <div class="container-fluid content-datugas2">
                 <!-- UPLOAD TUGAS -->
                 <h6>Upload Tugas</h6>
                 <form action="upload_tugas.php" method="POST" enctype="multipart/form-data">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="file_tugas" name="file_tugas" required>
                         <label class="custom-file-label" for="file_tugas">Pilih sebuah file</label>
-                        <small id="ktm-file">Max file 5MB</small>
+                        <small id="ktm-file" class="text-muted">Max file 5MB</small>
                     </div>
                     <div class="form-group">
+                        <h6>Deskripsi</h6>
                         <textarea name="desc" id="desc" rows="5" class="form-control" placeholder="Maks 250 karakter"></textarea>
                     </div>
                 </form>
                 
                 <!-- TABEL TUGAS DAN DOWNLOAD -->
-                <table class="table table-hover">
+                <h6>Tugas yang Diupload</h6>
+                <table class="table table-hover table-bordered">
                     <thead>
                         <td>No</td>
                         <td>Nama File</td>

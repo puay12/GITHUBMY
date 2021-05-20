@@ -350,12 +350,23 @@ p.petunjuk{
     color: #e7532e;
 }
 
-.home-sec .content-datugas{
-    padding: 0 0;
+.home-sec .content-datugas2{
+    padding: 24px 24px;
     margin-top: 24px;
+    border: 1px solid lightgray;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
 }
 
-.home-sec .content-datugas .card{
+.home-sec .content-datugas2 small{
+    margin-bottom: 32px;
+}
+
+.home-sec .content-datugas2 textarea{
+    margin-bottom: 32px;
+    color: #001833;
+}
+
+/* .home-sec .content-datugas .card{
     padding: 12px 12px;
     background: transparent;
     border: none;
@@ -425,7 +436,7 @@ p.petunjuk{
 
 .home-sec .content-datugas button.lihat:hover{
     background: #008270;
-}
+} */
 
 .show{
     display: block;
