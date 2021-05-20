@@ -21,7 +21,6 @@
             FROM data_tugas
             WHERE idFile = $id_file;
     $result = mysqli_query($konek, $sql);
-
 ?>
 
 <!DOCTYPE html>
@@ -93,31 +92,7 @@
                         <td>Download File</td>
                     </thead>
                     <tbody>
-                        <?php
-                        if($result){
-                            if(mysqli_num_rows($result) > 0){
-                                while($kolom = mysqli_fetch_array($result)){
-                                    echo "<tr>
-                                            <td>$no</td>
-                                            <td>$kolom['namaFile']</td>
-                                            <td>$kolom['sizeFile']</td>
-                                            <td>$kolom['descript']</td>
-                                            <td>
-                                                <a href='download_tugas.php'>
-                                                    <button class='btn btn-main'><span class='fa fa-download'></span>Download</button>
-                                                </a> 
-                                            </td>
-                                        </tr>";
-                                }
-                            }
-                            else{
-                                echo "<tr>Data berjumlah 0</tr>";
-                            }
-                        }
-                        else{
-                            echo "SQL Query Error : " . mysqli_error($konek) . "<br>";
-                        }
-                        ?>
+                        <tr>HALO</tr>
                     </tbody>
                 </table>
             </div>
