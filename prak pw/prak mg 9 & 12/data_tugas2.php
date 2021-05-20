@@ -67,8 +67,8 @@
                         <small id="ktm-file" class="text-muted">Max file 5MB</small>
                     </div>
                     <div class="form-group">
-                        <h6>Deskripsi</h6>
-                        <textarea name="desc" id="desc" rows="5" class="form-control" placeholder="Maks 250 karakter"></textarea>
+                        <h6 class="desc">Deskripsi</h6>
+                        <textarea name="desc" id="desc" rows="3" class="form-control" placeholder="Maks 150 karakter"></textarea>
                     </div>
                 </form>
                 

@@ -355,15 +355,42 @@ p.petunjuk{
     margin-top: 24px;
     border: 1px solid lightgray;
     box-shadow: 4px 4px 10px rgba(0,0,0,0.2);
+    background: #fff;
+    border-radius: 11px;
 }
 
-.home-sec .content-datugas2 small{
+.home-sec .content-datugas2 h6{
+    font-size: 16px;
+    font-weight: 550;
+}
+
+.home-sec .content-datugas2 input{
+    border: 1px solid lightgray;
+}
+
+.home-sec .content-datugas2 .desc{
     margin-bottom: 32px;
 }
 
 .home-sec .content-datugas2 textarea{
     margin-bottom: 32px;
     color: #001833;
+    margin-top: 12px;
+}
+
+.home-sec .content-datugas2 table{
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.home-sec .content-datugas2 thead{
+    background: #001833;
+    color: #fff;
+}
+
+.home-sec .content-datugas2 .custom-file-input{
+    cursor: pointer;
+    margin-top: 12px;
 }
 
 /* .home-sec .content-datugas .card{
