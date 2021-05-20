@@ -378,11 +378,11 @@ p.petunjuk{
 }
 
 .home-sec .content-datugas2 button{
-    padding: .3rem 1.0rem;
+    padding: .4rem 1.1rem;
     border: 1px solid transparent;
-    border-radius: 8px;
+    border-radius: 5px;
     transition: ease 0.3s;
-    margin-top: 24px;
+    margin-top: 16px;
     margin-bottom: 32px;
     position: relative;
     left: 50%;

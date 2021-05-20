@@ -70,7 +70,7 @@
                         <h6 class="desc">Deskripsi</h6>
                         <textarea name="desc" id="desc" rows="3" class="form-control" placeholder="Maks 150 karakter"></textarea>
                     </div>
-                    <button class="btn btn-success" type="submit"><span class="fa fa-send"></span>Kirim</button>
+                    <button class="btn btn-info" type="submit"><span class="fa fa-send"></span>Kirim</button>
                 </form>
                 
                 <!-- TABEL TUGAS DAN DOWNLOAD -->
