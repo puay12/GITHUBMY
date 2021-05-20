@@ -14,11 +14,11 @@
     $userpswd = $_SESSION['userpswd'];
     $no = 1;
     $idFile = $_GET['idFile'];
-    // $namaFile = $_POST['namaFile'];
-    // $sizeFile = $_POST['sizeFile'];
-    // $descript = $_POST['descript'];
+    $namaFile = $_POST['namaFile'];
+    $sizeFile = $_POST['sizeFile'];
+    $descript = $_POST['descript'];
     $sql =  "SELECT *
-            FROM data_tugas;
+            FROM data_tugas";
     $result = mysqli_query($konek, $sql);
 ?>
 
@@ -106,6 +106,7 @@
                                                 </a> 
                                             </td>
                                         </tr>";
+                                    $no++;
                                 }
                             }
                             else{
