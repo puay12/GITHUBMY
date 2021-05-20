@@ -9,9 +9,18 @@
             exit;
         }
     }
-    $id_login = $_GET['id_login'];
-    $userid = $_SESSION['userid'];
-    $userpswd = $_SESSION['userpswd'];
+    $no = 1;
+    $idFile = $_GET['idFile'];
+    // $namaFile = $_POST['namaFile'];
+    // $sizeFile = $_POST['sizeFile'];
+    // $descript = $_POST['descript'];
+    $sql =  SELECT *
+            FROM data_tugas
+            WHERE idFile = $id_file;
+    $result = mysqli_query($konek, $sql);
+    // $id_login = $_GET['id_login'];
+    // $userid = $_SESSION['userid'];
+    // $userpswd = $_SESSION['userpswd'];
 
 ?>
 
@@ -84,13 +93,31 @@
                         <td>Download File</td>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>HALO</td>
-                            <td>HALO</td>
-                            <td>HALO</td>
-                            <td>HALO</td>
-                            <td>HALO</td>
-                        </tr>
+                        <?php
+                        if($result){
+                            if(mysqli_num_rows($result) > 0){
+                                while($kolom = mysqli_fetch_array($result)){
+                                    echo "<tr>
+                                            <td>$no</td>
+                                            <td>$kolom['namaFile']</td>
+                                            <td>$kolom['sizeFile']</td>
+                                            <td>$kolom['descript']</td>
+                                            <td>
+                                                <a href='download_tugas.php'>
+                                                    <button class='btn btn-main'><span class='fa fa-download'></span>Download</button>
+                                                </a> 
+                                            </td>
+                                        </tr>";
+                                }
+                            }
+                            else{
+                                echo "<tr>Data berjumlah 0</tr>";
+                            }
+                        }
+                        else{
+                            echo "SQL Query Error : " . mysqli_error($konek) . "<br>";
+                        }
+                        ?>
                     </tbody>
                 </table>
             </div>
