@@ -377,7 +377,7 @@ p.petunjuk{
     margin-top: 12px;
 }
 
-.home-sec .content-datugas2 button.btn-success{
+.home-sec .content-datugas2 button.btn-info{
     padding: .4rem 1.1rem;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -396,18 +396,18 @@ p.petunjuk{
     transition: ease 0.3s;
 }
 
-.home-sec .content-datugas2 button.btn-success .fa-send,
+.home-sec .content-datugas2 button.btn-info .fa-send,
 .home-sec .content-datugas2 button.btn-main .fa-download{
     margin-right: 12px;
 }
 
-.home-sec .content-datugas2 button.btn-success:hover .fa-send::before,
+.home-sec .content-datugas2 button.btn-info:hover .fa-send::before,
 .home-sec .content-datugas2 button.btn-main:hover .fa-download::before{
     margin-right: 12px;
     transition: ease 0.3s;
 }
 
-.home-sec .content-datugas2 button.btn-success:hover .fa-send::after,
+.home-sec .content-datugas2 button.btn-info:hover .fa-send::after,
 .home-sec .content-datugas2 button.btn-main:hover .fa-download::after{
     margin-right: 24px;
     transition: ease 0.3s;
