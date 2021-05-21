@@ -32,11 +32,11 @@
         include config/closedb.php;
         echo "<br>File uploaded!<br>";
     }
-    $idFile = $_GET['idFile'];
-    $sql =  "SELECT namaFile, sizeFile, typeFile, descript
-            FROM data_tugas";
-    $result = mysqli_query($konek, $sql);
-    $no = 1;
+    // $idFile = $_GET['idFile'];
+    // $sql =  "SELECT namaFile, sizeFile, typeFile, descript
+    //         FROM data_tugas";
+    // $result = mysqli_query($konek, $sql);
+    // $no = 1;
 ?>
 
 <!DOCTYPE html>
@@ -109,33 +109,7 @@
                         <td>Download File</td>
                     </thead>
                     <tbody>
-                    <?php
-                        if($result){
-                            if(mysqli_num_rows($result) > 0){
-                                while($kolom = mysqli_fetch_array($result)){
-                                    echo "<tr>
-                                            <td>$no</td>
-                                            <td>$kolom['namaFile']</td>
-                                            <td>$kolom['sizeFile']</td>
-                                            <td>$kolom['typeFile']</td>
-                                            <td>$kolom['descript']</td>
-                                            <td>
-                                                <a href='download_tugas.php'>
-                                                    <button class='btn btn-main'><span class='fa fa-download'></span>Download</button>
-                                                </a> 
-                                            </td>
-                                        </tr>";
-                                    $no++;
-                                }
-                            }
-                            else{
-                                echo "<tr>Data berjumlah 0</tr>";
-                            }
-                        }
-                        else{
-                            echo "SQL Query Error : " . mysqli_error($konek) . "<br>";
-                        }
-                    ?>
+                        <tr>Hallo</tr>
                     </tbody>
                 </table>
             </div>
