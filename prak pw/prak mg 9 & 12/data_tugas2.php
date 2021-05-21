@@ -9,17 +9,34 @@
             exit;
         }
     }
-    $id_login = $_GET['id_login'];
-    $userid = $_SESSION['userid'];
-    $userpswd = $_SESSION['userpswd'];
-    $no = 1;
+    $uploadDir = 'C:\PENS Stuffs\semester 2\SO\fileUpload';
+    if(isset($_POST['upload'])){
+        $namaFile = $_FILES['file_tugas']['namaFile'];
+        $tmpName = $_FILES['file_tugas']['tmpName'];
+        $sizeFile = $_FILES['file_tugas']['sizeFile'];
+        $typeFile = $_FILES['file_tugas']['typeFile'];
+        $descript = $_POST['descript'];
+        $pathFile = $uploadDir . $namaFile;
+        $result_file = move_uploaded_file($tmpName, $path);
+        if(!$result_file){
+            echo "File gagal diupload";
+            exit;
+        }
+        if(!get_magic_quotes_gpc()){
+            $namaFile = addslashes($namaFile);
+            $pathFile = addslashes($pathFile);
+        }
+        $query_file =  "INSERT INTO data_tugas(namaFile, sizeFile, typeFile, descript, pathFile)
+                        VALUES('$namaFile', '$sizeFile', '$typeFile', '$descript', '$pathFile')";
+        mysqli_query($konek, $query_file) or die('Error, query failed : ' . mysqli_error());
+        include config/closedb.php;
+        echo "<br>File uploaded!<br>";
+    }
     $idFile = $_GET['idFile'];
-    $namaFile = $_POST['namaFile'];
-    $sizeFile = $_POST['sizeFile'];
-    $descript = $_POST['descript'];
-    $sql =  "SELECT *
+    $sql =  "SELECT namaFile, sizeFile, typeFile, descript
             FROM data_tugas";
     $result = mysqli_query($konek, $sql);
+    $no = 1;
 ?>
 
 <!DOCTYPE html>
@@ -67,11 +84,11 @@
             <div class="container-fluid content-datugas2">
                 <!-- UPLOAD TUGAS -->
                 <h6>Upload Tugas</h6>
-                <form action="upload_tugas.php" method="POST" enctype="multipart/form-data">
+                <form action="" method="POST" enctype="multipart/form-data">
                     <div class="custom-file">
                         <input type="file" class="custom-file-input" id="file_tugas" name="file_tugas" required>
                         <label class="custom-file-label" for="file_tugas">Pilih sebuah file</label>
-                        <small id="ktm-file" class="text-muted">Max file 5MB</small>
+                        <small id="file_tugas" class="text-muted">Max file 5MB</small>
                     </div>
                     <div class="form-group">
                         <h6 class="desc">Deskripsi</h6>
@@ -87,6 +104,7 @@
                         <td>No</td>
                         <td>Nama File</td>
                         <td>Ukuran File</td>
+                        <td>Tipe File</td>
                         <td>Deskripsi</td>
                         <td>Download File</td>
                     </thead>
@@ -99,6 +117,7 @@
                                             <td>$no</td>
                                             <td>$kolom['namaFile']</td>
                                             <td>$kolom['sizeFile']</td>
+                                            <td>$kolom['typeFile']</td>
                                             <td>$kolom['descript']</td>
                                             <td>
                                                 <a href='download_tugas.php'>
