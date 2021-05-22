@@ -350,7 +350,7 @@ p.petunjuk{
     color: #e7532e;
 }
 
-.home-sec .content-datugas2{
+.home-sec .content-upload{
     padding: 24px 24px;
     margin-top: 24px;
     border: 1px solid lightgray;
@@ -359,25 +359,25 @@ p.petunjuk{
     border-radius: 11px;
 }
 
-.home-sec .content-datugas2 h6{
+.home-sec .content-upload h6{
     font-size: 16px;
     font-weight: 550;
 }
 
-.home-sec .content-datugas2 input{
+.home-sec .content-upload input{
     border: 1px solid lightgray;
 }
 
-.home-sec .content-datugas2 .desc{
+.home-sec .content-upload .desc{
     margin-top: 24px;
 }
 
-.home-sec .content-datugas2 textarea{
+.home-sec .content-upload textarea{
     color: #001833;
     margin-top: 12px;
 }
 
-.home-sec .content-datugas2 button.btn-info{
+.home-sec .content-upload button.btn-info{
     padding: .4rem 1.1rem;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -389,42 +389,49 @@ p.petunjuk{
     transform: translateX(-50%);
 }
 
-.home-sec .content-datugas2 button.btn-main{
-    padding: .4rem 1.1rem;
-    border: 1px solid transparent;
-    border-radius: 5px;
-    transition: ease 0.3s;
-}
-
-.home-sec .content-datugas2 button.btn-info .fa-send,
-.home-sec .content-datugas2 button.btn-main .fa-download{
+.home-sec .content-upload button.btn-info .fa-send{
     margin-right: 12px;
 }
 
-.home-sec .content-datugas2 button.btn-info:hover .fa-send::before,
-.home-sec .content-datugas2 button.btn-main:hover .fa-download::before{
+.home-sec .content-upload button.btn-info:hover .fa-send::before{
     margin-right: 12px;
     transition: ease 0.3s;
 }
 
-.home-sec .content-datugas2 button.btn-info:hover .fa-send::after,
-.home-sec .content-datugas2 button.btn-main:hover .fa-download::after{
+.home-sec .content-upload button.btn-info:hover .fa-send::after{
     margin-right: 24px;
     transition: ease 0.3s;
 }
 
-.home-sec .content-datugas2 table{
+.home-sec .content-upload .custom-file-input{
+    cursor: pointer;
+}
+
+/* LIST TUGAS */
+.home-sec .list-tugas{
+    padding: 32px 32px;
+    background: #fff;
+    border: 1px solid lightgray;
+    border-radius: 11px;
+    box-shadow:  4px 4px 10px rgba(0,0,0,0.2);
+    margin-top: 24px;
+}
+
+.home-sec .list-tugas button.btn-outline-primary,
+.home-sec .list-tugas button.btn-primary{ 
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-sec .list-tugas table{
     font-size: 12px;
     margin-top: 12px;
 }
 
-.home-sec .content-datugas2 thead{
+.home-sec .list-tugas thead{
     background: #001833;
     color: #fff;
-}
-
-.home-sec .content-datugas2 .custom-file-input{
-    cursor: pointer;
 }
 
 /* .home-sec .content-datugas .card{

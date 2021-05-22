@@ -9,9 +9,7 @@
             exit;
         }
     }
-    $id_login = $_GET['id_login'];
-    $userid = $_SESSION['userid'];
-    $userpswd = $_SESSION['userpswd'];
+    include 'config/closedb.php';
 ?>
 
 <!DOCTYPE html>
@@ -43,7 +41,7 @@
                             <span class="list">Data Mahasiswa</span></a>
                     </li>
                     <li id="datatugas">
-                        <a href="data_tugas2.php" class="link3 active"><span class="fa fa-book"></span>
+                        <a href="data_tugas.php" class="link3 active"><span class="fa fa-book"></span>
                             <span class="list">Data Tugas</span></a>
                     </li>
                 </ul>
@@ -55,12 +53,22 @@
                 <p>Selamat Datang di Admin</p>
                 <a href="logout.php">Logout</a>
             </header>
-            <!-- LIHAT DETAIL TUGAS -->
-            <div class="container-fluid content-lihatugas">
-                <h3>HALO LIHATUGAS</h3>
-                <a href="data_tugas.php">
-                    <button class="btn btn-info kembali-datugas">Kembali ke Daftar Tugas</button>
-                </a>
+            <!-- DATA TUGAS -->
+            <div class="container-fluid content-upload">
+                <!-- UPLOAD TUGAS -->
+                <h6>Upload Tugas</h6>
+                <form action="upload.php" method="POST" enctype="multipart/form-data">
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="file_tugas" name="file_tugas" required>
+                        <label class="custom-file-label" for="file_tugas">Pilih sebuah file</label>
+                        <small id="file_tugas" class="text-muted">Max file 5MB</small>
+                    </div>
+                    <div class="form-group">
+                        <h6 class="desc">Deskripsi</h6>
+                        <textarea name="desc" id="desc" rows="3" class="form-control" placeholder="Maks 150 karakter"></textarea>
+                    </div>
+                    <button class="btn btn-info" type="submit"><span class="fa fa-send"></span>Kirim</button>
+                </form>
             </div>
         </div>
     </div>
@@ -68,6 +76,5 @@
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
 	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<!-- <script src="asset/js/main.js"></script> -->
 
 </html>
