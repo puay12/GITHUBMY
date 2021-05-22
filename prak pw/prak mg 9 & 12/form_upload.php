@@ -65,7 +65,7 @@
                     </div>
                     <div class="form-group">
                         <h6 class="desc">Deskripsi</h6>
-                        <textarea name="desc" id="desc" rows="3" class="form-control" placeholder="Maks 150 karakter"></textarea>
+                        <textarea name="descript" id="descript" rows="3" class="form-control" placeholder="Maks 150 karakter"></textarea>
                     </div>
                     <button class="btn btn-info" type="submit" name="upload"><span class="fa fa-send"></span>Kirim</button>
                 </form>

@@ -17,7 +17,7 @@
         $typeFile = $_FILES['file_tugas']['typeFile'];
         $descript = $_POST['descript'];
         $pathFile = $uploadDir . $namaFile;
-        $result_file = move_uploaded_file($tmpName, $path);
+        $result_file = move_uploaded_file($tmpName, $pathFile);
         if(!$result_file){
             echo "File gagal diupload";
             exit;
