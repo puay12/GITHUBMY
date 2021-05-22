@@ -31,7 +31,7 @@
 </head>
 
 <body>
-<div class="home-sec">
+    <div class="home-sec">
         <div class="sidebar position-fixed" id="sidebar">
             <img src="asset/img/logo.png" alt="DSS Scholarship" class="logo">
             <div class="sidebar-menu container-fluid">
@@ -58,7 +58,7 @@
                 <a href="logout.php">Logout</a>
             </header>
             <div class="container-fluid list-tugas">
-            <h6>Tugas yang Diupload</h6>
+                <h6>Tugas yang Diupload</h6>
                 <table class="table table-hover table-bordered">
                     <thead>
                         <td>No</td>
@@ -105,7 +105,7 @@
                     <button class="btn btn-primary">Upload Tugas</button>
                 </a>
             </div>
-            <!-- TABEL TUGAS DAN DOWNLOAD -->
         </div>
+    </div>
 </body>
 </html>
