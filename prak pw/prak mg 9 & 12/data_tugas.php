@@ -85,19 +85,19 @@
                         $query = "SELECT *
                                     FROM data_tugas";
                         $result2 = mysqli_query($konek, $query) or die('Error, query error');
-                        if(mysqli_num_rows($result) == 0){
+                        if(mysqli_num_rows($result2) == 0){
                             echo "Database kosong";
                         }
                         else{
-                            while(list($namaFile, $sizeFile, $typeFile, $descript, $pathFile) = mysqli_fetch_array($result2)){
+                            while($kolom = mysqli_fetch_array($result2)){
                                 echo "<tr>
                                         <td>$no</td>
-                                        <td>$namaFile</td>
-                                        <td>$sizeFile</td>
-                                        <td>$typeFile</td>
-                                        <td>$descript</td>
+                                        <td>$kolom['namaFile']</td>
+                                        <td>$kolom['sizeFile']</td>
+                                        <td>$kolom['typeFile']</td>
+                                        <td>$kolom['descript']</td>
                                         <td>
-                                            <a href='$pathFile'>
+                                            <a href='$kolom['pathFile']'>
                                                 <button class='btn btn-outline-primary'>Download</button>
                                             </a> 
                                         </td>
