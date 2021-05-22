@@ -10,10 +10,6 @@
         }
     }
     $idFile = $_GET['idFile'];
-    $sql = "SELECT namaFile, sizeFile, typeFile, descript
-            FROM data_tugas";
-    $result = mysqli_query($konek, $sql);
-    $no = 1;
 ?>
 
 <!DOCTYPE html>
@@ -70,32 +66,30 @@
                     </thead>
                     <tbody>
                     <?php
-                        if($result){
-                            if(mysqli_num_rows($result) > 0){
-                                while($kolom = mysqli_fetch_array($result)){
-                                    echo "<tr>
-                                            <td>$no</td>
-                                            <td>$kolom['namaFile']</td>
-                                            <td>$kolom['sizeFile']</td>
-                                            <td>$kolom['typeFile']</td>
-                                            <td>$kolom['descript']</td>
-                                            <td>
-                                                <a href='download.php?idFile=$kolom['idFile']'>
-                                                    <button class='btn btn-outline-primary'>Download</button>
-                                                </a> 
-                                            </td>
-                                        </tr>";
-                                    $no++;
-                                }
-                            }
-                            else{
-                                echo "<tr>
-                                        <td>Data berjumlah 0</td>
-                                    </tr>";
-                            }
+                        include 'config/koneksi.php';
+                        $query = "SELECT *
+                                    FROM data_tugas";
+                        $result2 = mysqli_query($konek, $query) or die('Error, query error');
+                        if(mysqli_num_rows($result) == 0){
+                            echo "Database kosong";
                         }
                         else{
-                            echo "SQL Query Error : " . mysqli_error($konek) . "<br>";
+                            while(list($idFile, $namaFile, $sizeFile, $typeFile, $descript, $pathFile) = mysqli_fetch_array($result2)){
+                                echo "<tr>
+                                        <td>$no</td>
+                                        <td>$namaFile</td>
+                                        <td>$sizeFile</td>
+                                        <td>$typeFile</td>
+                                        <td>$descript</td>
+                                        <td>
+                                            <a href='$pathFile'>
+                                                <button class='btn btn-outline-primary'>Download</button>
+                                                $namaFile
+                                            </a> 
+                                        </td>
+                                    </tr>";
+                                $no++;
+                            }
                         }
                         include 'config/closedb.php';
                     ?>

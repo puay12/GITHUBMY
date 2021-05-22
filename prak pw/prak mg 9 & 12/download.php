@@ -24,17 +24,4 @@
         include 'config/closedb.php';
         exit;
     }
-    include 'config/koneksi.php';
-    $query = "SELECT idFile, namaFile, pathFile
-                FROM data_tugas";
-    $result2 = mysqli_query($konek, $query) or die('Error, query error');
-    if(mysqli_num_rows($result) == 0){
-        echo "Database kosong";
-    }
-    else{
-        while(list($idFile, $namaFile, $pathFile) = mysqli_fetch_array($result2)){
-            echo "<a href='$pathFile'>$namaFile</a>";
-        }
-    }
-    include 'config/closedb.php';
 ?>
