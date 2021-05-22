@@ -89,15 +89,15 @@
                             echo "Database kosong";
                         }
                         else{
-                            while($kolom = mysqli_fetch_array($result2)){
+                            while(list($namaFile, $sizeFile, $typeFile, $descript, $pathFile) = mysqli_fetch_array($result2)){
                                 echo "<tr>
                                         <td>$no</td>
-                                        <td>$kolom['namaFile']</td>
-                                        <td>$kolom['sizeFile']</td>
-                                        <td>$kolom['typeFile']</td>
-                                        <td>$kolom['descript']</td>
+                                        <td>$namaFile</td>
+                                        <td>$sizeFile</td>
+                                        <td>$typeFile</td>
+                                        <td>$descript</td>
                                         <td>
-                                            <a href='$kolom['pathFile']'>
+                                            <a href='$pathFile'>
                                                 <button class='btn btn-outline-primary'>Download</button>
                                             </a> 
                                         </td>
