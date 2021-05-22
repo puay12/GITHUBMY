@@ -9,7 +9,7 @@
             exit;
         }
     }
-    $uploadDir = 'C:\\PENS%20Stuffs\\semester%202\\SO\\fileUpload';
+    $uploadDir = 'C:/PENS%20Stuffs/semester%202/SO/fileUpload';
     if(isset($_POST['upload'])){
         $namaFile = $_FILES['file_tugas']['namaFile'];
         $tmpName = $_FILES['file_tugas']['tmpName'];
