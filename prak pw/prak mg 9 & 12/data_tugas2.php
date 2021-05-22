@@ -33,10 +33,35 @@
         echo "<br>File uploaded!<br>";
     }
     // $idFile = $_GET['idFile'];
-    // $sql =  "SELECT namaFile, sizeFile, typeFile, descript
+    // $sql = "SELECT namaFile, sizeFile, typeFile, descript
     //         FROM data_tugas";
     // $result = mysqli_query($konek, $sql);
     // $no = 1;
+    // if($result){
+    //     if(mysqli_num_rows($result) > 0){
+    //         while($kolom = mysqli_fetch_array($result)){
+    //             echo "<tr>
+    //                     <td>$no</td>
+    //                     <td>$kolom['namaFile']</td>
+    //                     <td>$kolom['sizeFile']</td>
+    //                     <td>$kolom['typeFile']</td>
+    //                     <td>$kolom['descript']</td>
+    //                     <td>
+    //                         <a href='download_tugas.php'>
+    //                             <button class='btn btn-main'><span class='fa fa-download'></span>Download</button>
+    //                         </a> 
+    //                     </td>
+    //                 </tr>";
+    //             $no++;
+    //         }
+    //     }
+    //     else{
+    //         echo "<tr>Data berjumlah 0</tr>";
+    //     }
+    // }
+    // else{
+    //     echo "SQL Query Error : " . mysqli_error($konek) . "<br>";
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -108,8 +133,15 @@
                         <td>Deskripsi</td>
                         <td>Download File</td>
                     </thead>
-                    <tbody>
-                        <tr>Hallo</tr>
-                    </tbody>
+                    <!-- <tbody>
+                    </tbody> -->
                 </table>
             </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+</html>
